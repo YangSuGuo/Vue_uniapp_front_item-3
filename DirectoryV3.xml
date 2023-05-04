@@ -2,7 +2,8 @@
  <trees>
 
   <tree path="/Springboot_backend/src/main/java/com/example/config" title="配置"/>
-  <tree path="/Springboot_backend/src/main/java/com/example/controller" title="api"/>
+  <tree path="/Springboot_backend/src/main/java/com/example/controller" title="接口" extension="" presentableText=""
+        tooltipTitle="" icon="" textColor="" backgroundColor=""/>
   <tree path="/Springboot_backend/src/main/java/com/example/entity" title="实体"/>
   <tree path="/Springboot_backend/src/main/java/com/example/mapper" title="映射"/>
   <tree path="/Springboot_backend/src/main/java/com/example/service" title="数据库"/>
