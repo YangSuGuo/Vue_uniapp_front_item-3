@@ -1,0 +1,69 @@
+{
+  "pages": [
+    {
+      "path": "pages/Home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/My",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/Write",
+      "style": {
+        "navigationBarTitleText": "写作",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/secondary/Login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/secondary/Register",
+      "style": {
+        "navigationBarTitleText": "注册",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#707080",
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/Home",
+        "text": "首页",
+        "iconPath": "static/tabbar/nav1.png",
+        "selectedIconPath": "static/tabbar/nav1-a.png"
+      },
+      {
+        "pagePath": "pages/Write",
+        "text": "写作",
+        "iconPath": "static/tabbar/nav2.png",
+        "selectedIconPath": "static/tabbar/nav2-a.png"
+      },
+      {
+        "pagePath": "pages/My",
+        "text": "我的",
+        "iconPath": "static/tabbar/nav3.png",
+        "selectedIconPath": "static/tabbar/nav3-a.png"
+      }
+    ]
+  }
+}
