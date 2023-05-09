@@ -34,4 +34,7 @@
        textColor="" backgroundColor=""/>
  <tree path="/vue_webfront/src/components" title="主页面"/>
  <tree path="/vue_webfront/src/stores" title="vuex"/>
+ <tree path="/vue_webfront/src/components/Home.vue" title="首页"/>
+ <tree path="/vue_webfront/src/public/ElementUI.js" title="UI框架"/>
+ <tree path="/vue_webfront/src/public/ECharts.js" title="JS图表"/>
 </trees>

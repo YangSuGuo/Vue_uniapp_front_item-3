@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/Home/Home",
+    "pages/My/My",
+    "pages/Write/Write",
+    "pages/Login/Login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#D77C68",
+    "list": [
+      {
+        "pagePath": "pages/Home/Home",
+        "text": "首页",
+        "iconPath": "./static/tabbar/nav1.png",
+        "selectedIconPath": "./static/tabbar/nav1-a.png"
+      },
+      {
+        "pagePath": "pages/Write/Write",
+        "text": "写作",
+        "iconPath": "./static/tabbar/nav2.png",
+        "selectedIconPath": "./static/tabbar/nav2-a.png"
+      },
+      {
+        "pagePath": "pages/My/My",
+        "text": "我的",
+        "iconPath": "./static/tabbar/nav3.png",
+        "selectedIconPath": "./static/tabbar/nav3-a.png"
+      },
+      {
+        "pagePath": "pages/Login/Login",
+        "text": "登录",
+        "iconPath": "./static/tabbar/nav3.png",
+        "selectedIconPath": "./static/tabbar/nav3-a.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
