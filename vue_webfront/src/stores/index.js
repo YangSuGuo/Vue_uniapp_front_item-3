@@ -4,9 +4,17 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-    state: {},
+    state: {
+        card:{
+            parameter: "vue"
+        }
+    },
     getters: {},
-    mutations: {},
+    mutations: {
+        cardinfo(state,parameter){
+            state.card.parameter =parameter
+        }
+    },
     actions: {},
     modules: {}
 })

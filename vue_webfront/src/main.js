@@ -5,6 +5,7 @@ import router from './router'
 import stores from './stores'
 //第三方依赖
 import './public/ElementUI.js'
+// import './public/ant-design-vue.js'
 import './public/ECharts.js'
 
 new Vue({

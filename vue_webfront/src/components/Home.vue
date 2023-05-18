@@ -16,17 +16,17 @@
                     </el-col>
                     <el-col :lg="7" :md="9" :sm="7" :xl="5" :xs="0">
                         <div class="grid-content bg-purple 导航栏">
-                            <span class="文本 导航">VUE</span>
-                            <span class="文本 导航">NODE</span>
-                            <span class="文本 导航">JAVA</span>
-                            <span class="文本 导航">SPRING</span>
-                            <span class="文本 导航">UNIAPP</span>
-                            <span class="文本 导航">CHAT</span>
+                            <span class="文本 导航 vue">VUE</span>
+                            <span class="文本 导航 node">NODE</span>
+                            <span class="文本 导航 java">JAVA</span>
+                            <span class="文本 导航 spring">SPRING</span>
+                            <span class="文本 导航 uniapp">UNIAPP</span>
+                            <span class="文本 导航 chat">CHAT</span>
                         </div>
                     </el-col>
                     <el-col :lg="4" :md="4" :sm="6" :xl="4" :xs="0">
                         <div class="grid-content bg-purple-light 用户栏">
-                            <span class="文本 用户" style="zoom:40%">Login</span>
+                            <span class="文本 用户" style="zoom:40%">{{ Login }}</span>
                             <div style="height: 4rem;width: 4rem;background-color: #24292e;margin-left: 1rem;border-radius: 4px;">
                                 <i class="el-icon-user-solid" style="zoom: 300%;color: white"></i>
                             </div>
@@ -34,22 +34,23 @@
                     </el-col>
                 </el-row>
             </el-header>
-            <el-main style="height: 600px">
-                <router-view/>
-            </el-main>
-            <el-footer>
-                <el-row :gutter="10">
-                    <el-col :lg="8" :md="8" :sm="8" :xl="8" :xs="8">
-                        <div class="grid-content2 联系">
-                            <span>如有问题，请联系我。</span>
-                            <span>E-mail：3130876713@qq.com</span>
-                        </div>
-                    </el-col>
-                    <el-col :lg="8" :md="8" :sm="8" :xl="8" :xs="0">
-                        <div class="grid-content2 bg-purple"></div>
-                    </el-col>
-                    <el-col :lg="8" :md="8" :sm="8" :xl="8" :xs="0">
-                        <div class="grid-content2 icon">
+            <el-main class="主要">
+                <div id="home">
+                    <router-view/>
+                </div>
+                <el-footer style="margin-top: 8rem">
+                    <el-row :gutter="10">
+                        <el-col :lg="8" :md="8" :sm="8" :xl="8" :xs="8">
+                            <div class="grid-content2 联系">
+                                <span>如有问题，请联系我。</span>
+                                <span>E-mail：3130876713@qq.com</span>
+                            </div>
+                        </el-col>
+                        <el-col :lg="8" :md="8" :sm="8" :xl="8" :xs="0">
+                            <div class="grid-content2 bg-purple"></div>
+                        </el-col>
+                        <el-col :lg="8" :md="8" :sm="8" :xl="8" :xs="0">
+                            <div class="grid-content2 icon">
                             <span class="icons">
                                 <svg class="icon" height="40"
                                      p-id="9573" t="1683860451460"
@@ -61,7 +62,7 @@
                                         fill="#000000" p-id="9574"></path>
                                 </svg>
                             </span>
-                            <span class="icons">
+                                <span class="icons">
                                 <svg class="icon" height="40" p-id="7481" t="1683860373112"
                                      version="1.1" viewBox="0 0 1040 1024" width="50"
                                      xmlns="http://www.w3.org/2000/svg"><path
@@ -70,16 +71,16 @@
                                         d="M1024.205685 627.626437c0-144.926764-145.053654-263.031649-307.96707-263.031649-172.509982 0-308.285319 118.169353-308.285319 263.031649 0 145.308457 135.837758 263.026532 308.285319 263.026532 36.106336 0 72.529897-9.025561 108.762099-18.113543l99.410104 54.537104-27.272133-90.638323C969.922361 781.769097 1024.205685 709.37223 1024.205685 627.626437L1024.205685 627.626437zM616.252389 582.240761c-17.986653 0-36.232203-17.923208-36.232203-36.232203 0-18.051121 18.246573-36.228109 36.232203-36.228109 27.525913 0 45.385677 18.176988 45.385677 36.228109C661.637042 564.317553 643.777279 582.240761 616.252389 582.240761L616.252389 582.240761zM815.653835 582.240761c-17.860786 0-36.038798-17.923208-36.038798-36.232203 0-18.051121 18.114566-36.228109 36.038798-36.228109 27.270087 0 45.384653 18.176988 45.384653 36.228109C861.037465 564.317553 842.923922 582.240761 815.653835 582.240761L815.653835 582.240761zM815.653835 582.240761"
                                         fill="#000000" p-id="7483"></path></svg>
                             </span>
-                        </div>
-                    </el-col>
-                </el-row>
-            </el-footer>
+                            </div>
+                        </el-col>
+                    </el-row>
+                </el-footer>
+            </el-main>
         </div>
     </el-container>
 </template>
 
 <script>
-
 export default {
     //todo 无限滚动
     //todo 文章页面
@@ -87,6 +88,7 @@ export default {
     data() {
         return {
             dark: false,
+            Login: "Login"
         }
     },
     methods: {
@@ -113,43 +115,50 @@ export default {
 }
 
 .主体 {
-  margin-top: 7.5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin: 7.5rem 10rem 0;
   width: 100%;
   height: 100%;
+}
+
+.主要 {
+  width: 100%;
+  height: 100%;
+}
+
+//滚动条伪类【自定义样式】
+::-webkit-scrollbar {
+  display: none;
 }
 
 .grid-content {
   border-radius: 4px;
   min-height: 70px;
   //不可选中
-  -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+  -webkit-touch-callout: none;
   user-select: none;
-}
-.grid-content {
-    border-radius: 4px;
-    min-height: 70px;
-
-    //不可选中
-    -webkit-touch-callout: none; /*系统默认菜单被禁用*/
-    user-select: none;
-}
-
-.bg-purple {
-  //background: #d3dce6;
-}
-
-.bg-purple-light {
-  //background: #e5e9f2;
 }
 
 .文本 {
   font-size: 6.1rem;
-  font-family: "Source Sans 3 Semibold";
+  font-family: "Source Sans 3 Semibold", serif;
   text-align: center;
   writing-mode: horizontal-tb;
 }
+
+.导航栏 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.导航栏 span:hover {
+  color: #ff000090;
+}
+
+.导航栏 span:active {
+  color: #000;
+}
+
 
 .开关 {
   font-family: Broadway, serif;
@@ -169,7 +178,6 @@ export default {
 
 .导航 {
   font-family: "Source Sans 3", serif;
-  //font-family: "Source Sans Pro", serif;
   font-size: 2rem;
   margin-right: 15px;
 }
@@ -182,9 +190,9 @@ export default {
 .icon {
   text-align: right;
 }
-.icons{
-    position: relative;
-    //margin-bottom: 100px;
-    right: -90%;
+
+.icons {
+  position: relative;
+  right: -90%;
 }
 </style>

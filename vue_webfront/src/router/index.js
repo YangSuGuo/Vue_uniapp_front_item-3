@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 //主页面
 import Home from "@/components/Home.vue";
+import list from "@/views/home/list.vue";
+import login from "@/views/Login.vue";
 
 Vue.use(VueRouter)
 
@@ -14,11 +16,16 @@ const router = new VueRouter({
             name: 'Home',
             component: Home,
             children: [
-                /*{
+                {
                     path: '',
-                    name: '',
-                    component:
-                },*/
+                    name: 'list',
+                    component: list
+                },
+                {
+                    path: 'login',
+                    name: 'login',
+                    component: login
+                },
             ]
         }
     ]

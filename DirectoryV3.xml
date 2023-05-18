@@ -40,4 +40,5 @@
  <tree path="/Springboot_backend/src/main/java/com/example/service/impl/AuthorizeServiceImpl.java" title="接口"/>
  <tree path="/Springboot_backend/src/main/java/com/example/config/SecurityConfiguration.java" title="常规配置"/>
     <tree path="/vue_webfront/src/public/vuesax.js" title="UI框架"/>
+    <tree path="/vue_webfront/src/public/ant-design-vue.js" title="UI框架"/>
 </trees>
