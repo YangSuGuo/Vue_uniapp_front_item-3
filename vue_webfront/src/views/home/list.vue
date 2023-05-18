@@ -32,16 +32,23 @@ import axios from "axios";
 export default {
     data() {
         return {
-            items: '',
+            items: [{
+                title: '卡片 1',
+                time: '2023-10-17',
+                overview: '示例标题',
+                url: 'https://picsum.photos/400/300?random=1'
+            }],
         }
     },
     methods: {},
     created() {
-        axios.post('http://localhost:8080/api/auth/essay/list', {
-            parameter: "vue",
-        }).then(res => {
-            console.log("前端返回的res:", res)
-        }).catch(err => {
+        // axios.post('http://localhost:8080/api/auth/essay/list?parameter=vue')
+            axios.post('http://localhost:8080/api/auth/essay/list?', {
+                parameter: "vue"
+            })
+            .then(res => {
+                console.log("前端返回的res:", res)
+            }).catch(err => {
             console.log("错误：" + err)
         })
     }

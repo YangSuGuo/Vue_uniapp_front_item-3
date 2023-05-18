@@ -82,12 +82,13 @@
 
 <script>
 export default {
-    //todo 无限滚动
     //todo 文章页面
-    //todo 自定义鼠标样式
+    //todo 可选：自定义鼠标js样式
     data() {
         return {
             dark: false,
+            // todo 用户名需要vuex存储，
+            // todo 可选：持久化方案 1，springboot框架持久化，2.vuex，添加插件持久化，3.cook存储，4。使用浏览器本地化存储
             Login: "Login"
         }
     },
