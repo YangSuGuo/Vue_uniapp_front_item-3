@@ -80,18 +80,20 @@ export default {
     },
     methods: {
         login() {
-            axios.get('http://127.0.0.1/login', {
-                params: {
-                    name: this.ruleForm.username,
-                    password: this.ruleForm.password
-                }
-            }).then(res => {
+            axios.post('http://localhost:8080/api/auth/login', {
+                username: this.ruleForm.username,
+                password: this.ruleForm.password,
+            headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                withCredentials: true
+            },).then(res => {
                 if (res.data.status === 200) {
                     console.log("登录成功");
                     console.log(res.data)
 
-                    this.$store.commit('userinfo', this.ruleForm.username)
-                    this.$store.commit('passinfo', this.ruleForm.password)
+                    // this.$store.commit('userinfo', this.ruleForm.username)
+                    // this.$store.commit('passinfo', this.ruleForm.password)
 
                     const loading = this.$loading({
                         lock: true,
@@ -105,7 +107,7 @@ export default {
                     }, 1500);
 
                     setTimeout(() => {
-                        this.$router.push({path: '/Background/home'});
+                        // this.$router.push({path: '/Background/home'});
 
                         this.$notify({
                             title: '登录成功',
@@ -116,8 +118,9 @@ export default {
                         });
                     }, 1510);
 
-                } else if (res.data.status === 202) {
+                } else if (res.data.status === 401) {
                     console.log("用户名密码错误");
+                    console.log(JSON.stringify(res.data));
                     {
                         this.$notify({
                             title: '账号或密码错误',
@@ -132,16 +135,6 @@ export default {
                 console.log("登录失败" + err);
             })
         },
-        zc() {
-            this.$router.push({path: '/Enroll'})
-            /* this.$notify({
-               title: '楊蘇國',
-               duration: 1000,
-               message: this.$createElement('i', {style: 'color: teal'}, '注册目前并不对外开放！！'),
-               type: 'warning',
-               position: 'top-left'
-             });*/
-        }
     },
 };
 </script>

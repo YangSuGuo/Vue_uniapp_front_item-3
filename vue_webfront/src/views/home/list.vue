@@ -27,6 +27,12 @@
 
 <script>
 
+// todo 夜间模式是否要给图片添加遮罩
+// todo 添加卡片点击事件，点击后将aid发给后台返回文章正文
+// todo 后台api，好像存在Spring Security鉴权问题，token
+// todo 阅读页面施工中。。。。。。
+// todo 登录界面施工中.........
+
 import axios from "axios";
 
 export default {
@@ -37,15 +43,35 @@ export default {
                 time: '2023-10-17',
                 overview: '示例标题',
                 url: 'https://picsum.photos/400/300?random=1'
+            }, {
+                title: '卡片 2',
+                time: '2023-10-17',
+                overview: '示例标题',
+                url: 'https://picsum.photos/400/300?random=1'
+            }, {
+                title: '卡片 3',
+                time: '2023-10-17',
+                overview: '示例标题',
+                url: 'https://picsum.photos/400/300?random=1'
+            }, {
+                title: '卡片 4',
+                time: '2023-10-17',
+                overview: '示例标题',
+                url: 'https://picsum.photos/400/300?random=1'
+            }, {
+                title: '卡片 5',
+                time: '2023-10-17',
+                overview: '示例标题',
+                url: 'https://picsum.photos/400/300?random=1'
             }],
         }
     },
     methods: {},
     created() {
         // axios.post('http://localhost:8080/api/auth/essay/list?parameter=vue')
-            axios.post('http://localhost:8080/api/auth/essay/list?', {
-                parameter: "vue"
-            })
+        axios.post('http://localhost:8080/api/auth/essay/list?', {
+            parameter: "vue"
+        })
             .then(res => {
                 console.log("前端返回的res:", res)
             }).catch(err => {
@@ -55,59 +81,72 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .list {
-    margin-top: 5rem;
-    display: contents;
+  margin-left: -2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5px;
+  padding: 1rem;
 }
 
 .card {
-    max-width: 38rem;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+  //background-color: blueviolet;
+  border-bottom: 2px solid #00000010;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 33.9rem;
+  height: auto;
+  margin: 1rem auto;
 
-@media (min-width: 768px) {
-    .card {
-        width: 640px;
-    }
-}
+  @media (min-width: 768px) {
+    width: 640px;
+  }
 
-.card-image,
-.card-content {
-    padding: 16px;
-}
+  &-title,
+  &-meta,
+  &-time,
+  &-overview {
+    font-family: 苹方-简, Arial, sans-serif;
+  }
 
-.card-title {
+  &-image,
+  &-content {
+    padding: 1.5rem;
+  }
+
+  &-image {
+    width: 31rem;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  &-img {
+    border-radius: 0.4rem;
+  }
+
+  &-content {
+    margin-top: 3rem;
+  }
+
+  &-title {
     font-size: 24px;
-    margin-bottom: 8px;
-}
+    margin-bottom: 16px;
+  }
 
-.card-meta {
+  &-meta {
     display: flow;
     align-items: center;
     justify-content: space-between;
-}
+  }
 
-.card-time {
+  &-time {
     font-size: 14px;
     color: #999999;
-    margin-right: 8px;
-}
+  }
 
-.card-overview {
+  &-overview {
     font-size: 16px;
-    color: #333333;
+  }
 }
-
-.image-slot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #dddddd;
-    border-radius: 8px;
-}
-
 </style>

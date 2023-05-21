@@ -117,6 +117,7 @@ export default {
 
 .主体 {
   margin: 7.5rem 10rem 0;
+  //max-width: 135rem;
   width: 100%;
   height: 100%;
 }
