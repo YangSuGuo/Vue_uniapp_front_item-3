@@ -4,20 +4,20 @@
             <div :id="index" class="card">
                 <div class="card-image">
                     <el-image
-                            :src="item.url"
+                            :src="item.background"
                             class="card-img"
                             fit="cover"
                             lazy>
-                        <div slot="error" class="image-slot">
-                            <i class="el-icon-picture-outline"></i>
+                        <div slot="error">
+                            <i class="el-icon-picture-outline" style="zoom:1500%"></i>
                         </div>
                     </el-image>
                 </div>
                 <div class="card-content">
                     <h2 class="card-title">{{ item.title }}</h2>
                     <div class="card-meta">
-                        <span class="card-time">{{ item.time }}</span>
-                        <p><span class="card-overview">{{ item.overview }}</span></p>
+                        <span class="card-time">{{ new Date(item.writingtime).toLocaleDateString() }}</span>
+                        <p><span class="card-overview">{{ item.articleoverview }}</span></p>
                     </div>
                 </div>
             </div>
@@ -26,58 +26,64 @@
 </template>
 
 <script>
-
 // todo 夜间模式是否要给图片添加遮罩
 // todo 添加卡片点击事件，点击后将aid发给后台返回文章正文
 // todo 后台api，好像存在Spring Security鉴权问题，token
 // todo 阅读页面施工中。。。。。。
 // todo 登录界面施工中.........
-
 import axios from "axios";
+import {mapState} from "vuex";
 
 export default {
+    // vuex的一个函数 将vuex的数据转换成计算型
+    computed: {
+        ...mapState(['card']),
+    },
     data() {
         return {
-            items: [{
-                title: '卡片 1',
-                time: '2023-10-17',
-                overview: '示例标题',
-                url: 'https://picsum.photos/400/300?random=1'
-            }, {
-                title: '卡片 2',
-                time: '2023-10-17',
-                overview: '示例标题',
-                url: 'https://picsum.photos/400/300?random=1'
-            }, {
-                title: '卡片 3',
-                time: '2023-10-17',
-                overview: '示例标题',
-                url: 'https://picsum.photos/400/300?random=1'
-            }, {
-                title: '卡片 4',
-                time: '2023-10-17',
-                overview: '示例标题',
-                url: 'https://picsum.photos/400/300?random=1'
-            }, {
-                title: '卡片 5',
-                time: '2023-10-17',
-                overview: '示例标题',
-                url: 'https://picsum.photos/400/300?random=1'
-            }],
+            items: []
         }
     },
     methods: {},
+    mounted() {
+        // vuex中的数据改变时，重新请求并渲染
+        this.$store.watch(
+            (state) => state.card.parameter,
+            () => {
+                // console.log('成功')
+                axios.post('http://localhost:8080/api/auth/essay/list?', {
+                    parameter: this.$store.state.card.parameter
+                }, {
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    withCredentials: true
+                }).then(res => {
+                    this.items = res.data
+                    // console.log("前端返回的res:", res)
+                }).catch(err => {
+                    console.log("错误：" + err)
+                })
+            }
+        );
+    },
+
     created() {
-        // axios.post('http://localhost:8080/api/auth/essay/list?parameter=vue')
         axios.post('http://localhost:8080/api/auth/essay/list?', {
-            parameter: "vue"
-        })
-            .then(res => {
-                console.log("前端返回的res:", res)
-            }).catch(err => {
+            parameter: this.$store.state.card.parameter
+        }, {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            withCredentials: true
+        }).then(res => {
+            this.items = res.data
+            // console.log("前端返回的res:", res)
+        }).catch(err => {
             console.log("错误：" + err)
         })
-    }
+    },
+
 }
 </script>
 
@@ -92,7 +98,7 @@ export default {
 
 .card {
   //background-color: blueviolet;
-  border-bottom: 2px solid #00000010;
+  //border-bottom: 2px solid #00000010;
   border-radius: 8px;
   width: 100%;
   max-width: 33.9rem;
@@ -122,6 +128,8 @@ export default {
   }
 
   &-img {
+    width: 31.5rem;
+    height: 23.5rem;
     border-radius: 0.4rem;
   }
 
@@ -147,6 +155,7 @@ export default {
 
   &-overview {
     font-size: 16px;
+    word-wrap: break-word;
   }
 }
 </style>

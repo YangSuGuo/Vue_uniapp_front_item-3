@@ -41,4 +41,12 @@
  <tree path="/Springboot_backend/src/main/java/com/example/config/SecurityConfiguration.java" title="常规配置"/>
     <tree path="/vue_webfront/src/public/vuesax.js" title="UI框架"/>
     <tree path="/vue_webfront/src/public/ant-design-vue.js" title="UI框架"/>
+    <tree path="/vue_webfront/src/views/home/list.vue" title="卡片"/>
+ <tree path="/vue_webfront/src/views/home/Read.vue" title="阅读"/>
+ <tree path="/vue_webfront/src/views/Login.vue" title="登录"/>
+ <tree path="/Springboot_backend/src/main/java/com/example/controller/AuthorizeController.java" title="api"/>
+ <tree path="/Springboot_backend/src/main/java/com/example/entity/user/Account.java" title="用户"/>
+ <tree path="/Springboot_backend/src/main/java/com/example/entity/writing/Essay.java" title="文章"/>
+ <tree path="/Springboot_backend/src/main/java/com/example/entity/RestBean.java" title="状态码"/>
+ <tree path="/Springboot_backend/src/main/java/com/example/service/AuthorizeService.java" title="操作接口"/>
 </trees>

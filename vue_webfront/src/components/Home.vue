@@ -16,16 +16,16 @@
                     </el-col>
                     <el-col :lg="7" :md="9" :sm="7" :xl="5" :xs="0">
                         <div class="grid-content bg-purple 导航栏">
-                            <span class="文本 导航 vue">VUE</span>
-                            <span class="文本 导航 node">NODE</span>
-                            <span class="文本 导航 java">JAVA</span>
-                            <span class="文本 导航 spring">SPRING</span>
-                            <span class="文本 导航 uniapp">UNIAPP</span>
-                            <span class="文本 导航 chat">CHAT</span>
+                            <span class="文本 导航 vue" @click="vue">VUE</span>
+                            <span class="文本 导航 node" @click="node">NODE</span>
+                            <span class="文本 导航 java" @click="java">JAVA</span>
+                            <span class="文本 导航 spring" @click="spring">SPRING</span>
+                            <span class="文本 导航 uniapp" @click="uniapp">UNIAPP</span>
+                            <span class="文本 导航 chat" @click="chat">CHAT</span>
                         </div>
                     </el-col>
                     <el-col :lg="4" :md="4" :sm="6" :xl="4" :xs="0">
-                        <div class="grid-content bg-purple-light 用户栏">
+                        <div class="grid-content bg-purple-light 用户栏" @click="YSG">
                             <span class="文本 用户" style="zoom:40%">{{ Login }}</span>
                             <div style="height: 4rem;width: 4rem;background-color: #24292e;margin-left: 1rem;border-radius: 4px;">
                                 <i class="el-icon-user-solid" style="zoom: 300%;color: white"></i>
@@ -81,15 +81,14 @@
 </template>
 
 <script>
+
 export default {
-    //todo 文章页面
-    //todo 可选：自定义鼠标js样式
+    // todo 用户名需要vuex存储，
+    // todo 可选：持久化方案 1，springboot框架持久化，2.vuex，添加插件持久化，3.cook存储，4。使用浏览器本地化存储
     data() {
         return {
             dark: false,
-            // todo 用户名需要vuex存储，
-            // todo 可选：持久化方案 1，springboot框架持久化，2.vuex，添加插件持久化，3.cook存储，4。使用浏览器本地化存储
-            Login: "Login"
+            Login: this.$store.state.userinfo.user
         }
     },
     methods: {
@@ -101,10 +100,48 @@ export default {
                 window.document.documentElement.setAttribute("data-theme", 'light');
             }
         },
+        YSG() {
+            // user:YSG
+            // pass:5409
+            this.$router.push('login')
+        },
+        vue() {
+            this.$store.commit('cardinfo', 'vue')
+            console.log(this.$store.state.card.parameter)
+            this.$router.push('/')
+        },
+        node() {
+            this.$store.commit('cardinfo', 'node')
+            console.log(this.$store.state.card.parameter)
+            this.$router.push('/')
+        },
+        java() {
+            this.$store.commit('cardinfo', 'java')
+            console.log(this.$store.state.card.parameter)
+            this.$router.push('/')
+        },
+        spring() {
+            this.$store.commit('cardinfo', 'spring')
+            console.log(this.$store.state.card.parameter)
+            this.$router.push('/')
+        },
+        uniapp() {
+            this.$store.commit('cardinfo', 'uniapp')
+            console.log(this.$store.state.card.parameter)
+            this.$router.push('/')
+        },
+        chat() {
+            this.$store.commit('cardinfo', 'chat')
+            console.log(this.$store.state.card.parameter)
+            this.$router.push('/')
+        },
+
     },
     mounted() {
         window.document.documentElement.setAttribute("data-theme", 'light');
     },
+    created() {
+    }
 }
 </script>
 <style lang="scss" scoped>

@@ -2,7 +2,7 @@
     <div id="app">
         <div class="背景">
             <div id="登录框体">
-                <div v-loading="loading" class="表单框体">
+                <div class="表单框体">
                     <h1 class="登录标题">Login</h1>
                     <el-form
                             ref="ruleForm"
@@ -82,43 +82,29 @@ export default {
         login() {
             axios.post('http://localhost:8080/api/auth/login', {
                 username: this.ruleForm.username,
-                password: this.ruleForm.password,
-            headers: {
+                password: this.ruleForm.password
+            }, {
+                headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 withCredentials: true
             },).then(res => {
-                if (res.data.status === 200) {
+                if (res.status === 200) {
                     console.log("登录成功");
-                    console.log(res.data)
 
-                    // this.$store.commit('userinfo', this.ruleForm.username)
-                    // this.$store.commit('passinfo', this.ruleForm.password)
+                    this.$store.commit('userinfo', this.ruleForm.username)
+                    this.$store.commit('passinfo', this.ruleForm.password)
 
-                    const loading = this.$loading({
-                        lock: true,
-                        text: '正在加载中...',
-                        spinner: 'el-icon-loading',
-                        background: 'rgba(0,0,0,0.5)'
+                    this.$router.push('/')
+
+                    this.$notify({
+                        title: '欢迎你，我的主人',
+                        duration: 1000,
+                        message: this.$createElement('i', {style: 'color: teal'}, '祝你有美好的一天！'),
+                        type: 'success',
+                        position: 'top-right'
                     });
-
-                    setTimeout(() => {
-                        loading.close();
-                    }, 1500);
-
-                    setTimeout(() => {
-                        // this.$router.push({path: '/Background/home'});
-
-                        this.$notify({
-                            title: '登录成功',
-                            duration: 1000,
-                            message: this.$createElement('i', {style: 'color: teal'}, '主页面目前不对外开放！！'),
-                            type: 'warning',
-                            position: 'top-right'
-                        });
-                    }, 1510);
-
-                } else if (res.data.status === 401) {
+                } else if (res.status === 401) {
                     console.log("用户名密码错误");
                     console.log(JSON.stringify(res.data));
                     {
@@ -140,52 +126,5 @@ export default {
 </script>
 
 <style scoped>
-#app {
-    /*noinspection CssUnknownTarget*/
-    /*  background: url("https://i.328888.xyz/2023/03/27/inNe9A.jpeg");
-      width: 100%;
-      height: 100%;*/
-    /*position: fixed;*/
-    /*background-size: 80% 80%;*/
-}
 
-#登录框体 {
-    /*位置与大小*/
-    /*top: 13%;*/
-    /*left: 63%;*/
-    /*width: 500px;*/
-    /*height: 600px;*/
-    /*position: absolute;*/
-    /*样式*/
-    /*background: rgba(255, 255, 255, 0.8);*/
-    /*border-radius: 10%; !*圆角*!*/
-    /*box-shadow: 5px 6px 8px rgba(74, 124, 199, 0.7); !*阴影*!*/
-}
-
-.登录标题 {
-    /*位置设置*/
-    margin-top: 35px;
-    margin-bottom: 100px;
-    /*字体设置*/
-    text-align: center;
-    font-size: 60px;
-    font-family: Elephant, serif;
-    font-style: italic;
-    /*color: #606266;*/
-}
-
-.表单框体 {
-    /*大小*/
-    /*width: 450px;*/
-    /*height: 350px;*/
-    /*位置*/
-    /*position: absolute;*/
-    /*top: 65px;*/
-    /*left: 25px;*/
-}
-
-/*.背景 {
-    margin-top: 30px;
-    margin-left: 30px;
-}*/
 </style>

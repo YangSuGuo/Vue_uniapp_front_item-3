@@ -5,14 +5,24 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        card:{
-            parameter: "vue"
+        userinfo: {
+            user: "Login",
+            password: null,
+        },
+        card: {
+            parameter: 'vue'
         }
     },
     getters: {},
     mutations: {
-        cardinfo(state,parameter){
-            state.card.parameter =parameter
+        userinfo(state, user) {
+            state.userinfo.user = user
+        },
+        passinfo(state, pass) {
+            state.userinfo.password = pass
+        },
+        cardinfo(state, parameter) {
+            state.card.parameter = parameter
         }
     },
     actions: {},

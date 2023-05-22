@@ -1,5 +1,4 @@
 import Vue from 'vue'
-
 import App from './App.vue'
 import router from './router'
 import stores from './stores'
@@ -9,6 +8,6 @@ import './public/ElementUI.js'
 import './public/ECharts.js'
 
 new Vue({
-    router,stores,
+    router, store: stores,
     render: (h) => h(App)
 }).$mount('#app')
