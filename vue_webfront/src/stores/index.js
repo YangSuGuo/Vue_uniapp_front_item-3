@@ -10,6 +10,7 @@ export default new Vuex.Store({
             password: null,
         },
         card: {
+            aid: null,
             parameter: 'vue'
         }
     },
@@ -23,6 +24,9 @@ export default new Vuex.Store({
         },
         cardinfo(state, parameter) {
             state.card.parameter = parameter
+        },
+        aidinfo(state, aid){
+            state.card.aid = aid
         }
     },
     actions: {},

@@ -6,6 +6,7 @@ import stores from './stores'
 import './public/ElementUI.js'
 // import './public/ant-design-vue.js'
 import './public/ECharts.js'
+import './public/vue-mavon-editor.js'
 
 new Vue({
     router, store: stores,

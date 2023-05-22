@@ -1,6 +1,6 @@
 <template>
     <div class="list">
-        <div v-for="(item, index) in items" :key="index">
+        <div v-for="(item, index) in items" :key="index" v-on:click="handleClick(index)">
             <div :id="index" class="card">
                 <div class="card-image">
                     <el-image
@@ -27,8 +27,9 @@
 
 <script>
 // todo 夜间模式是否要给图片添加遮罩
+// todo 当后台返回的数据为空时，要不要添加一个空状态提示
 // todo 添加卡片点击事件，点击后将aid发给后台返回文章正文
-// todo 后台api，好像存在Spring Security鉴权问题，token
+// todo 后台api，好像存在Spring Security鉴权问题，token[已解决]
 // todo 阅读页面施工中。。。。。。
 // todo 登录界面施工中.........
 import axios from "axios";
@@ -44,7 +45,14 @@ export default {
             items: []
         }
     },
-    methods: {},
+    methods: {
+        //列表点击事件，列表中index个中的aid
+        handleClick(index) {
+            this.$store.commit('aidinfo',this.items[index].aid)
+            console.log(this.$store.state.card.aid)
+            this.$router.push('/Read')
+        },
+    },
     mounted() {
         // vuex中的数据改变时，重新请求并渲染
         this.$store.watch(

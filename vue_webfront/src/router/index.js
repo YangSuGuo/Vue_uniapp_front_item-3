@@ -4,6 +4,8 @@ import VueRouter from 'vue-router'
 import Home from "@/components/Home.vue";
 import list from "@/views/home/list.vue";
 import login from "@/views/Login.vue";
+//子页面
+import Read from "@/views/home/Read.vue";
 
 Vue.use(VueRouter)
 
@@ -27,6 +29,11 @@ const router = new VueRouter({
                     component: login
                 },
             ]
+        },
+        {
+            path: '/Read',
+            name: 'Read',
+            component: Read,
         }
     ]
 })

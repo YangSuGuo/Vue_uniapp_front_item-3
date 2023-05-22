@@ -49,4 +49,6 @@
  <tree path="/Springboot_backend/src/main/java/com/example/entity/writing/Essay.java" title="文章"/>
  <tree path="/Springboot_backend/src/main/java/com/example/entity/RestBean.java" title="状态码"/>
  <tree path="/Springboot_backend/src/main/java/com/example/service/AuthorizeService.java" title="操作接口"/>
+    <tree path="/vue_webfront/src/public/vue-mavon-editor.js" title="MD渲染" extension="" presentableText=""
+          tooltipTitle="" icon="" textColor="" backgroundColor=""/>
 </trees>
