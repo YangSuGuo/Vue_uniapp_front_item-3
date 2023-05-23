@@ -81,69 +81,80 @@
 </template>
 
 <script>
-
+import {mapState} from "vuex";
+// todo 用户名需要vuex存储，
+// todo 可选：持久化方案 1，springboot框架持久化，2.vuex，添加插件持久化，3.cook存储，4。使用浏览器本地化存储
 export default {
-    // todo 用户名需要vuex存储，
-    // todo 可选：持久化方案 1，springboot框架持久化，2.vuex，添加插件持久化，3.cook存储，4。使用浏览器本地化存储
-    data() {
-        return {
-            dark: false,
-            Login: this.$store.state.userinfo.user
-        }
+    computed: {
+        ...mapState({
+            Login: (state) => state.userinfo.user
+        }),
     },
     methods: {
         day() {
             this.dark = !this.dark;
+            this.$store.commit("darkinfo", this.dark);
             if (this.dark) {
-                window.document.documentElement.setAttribute("data-theme", 'dark');
+                window.document.documentElement.setAttribute("data-theme", "dark");
             } else {
-                window.document.documentElement.setAttribute("data-theme", 'light');
+                window.document.documentElement.setAttribute("data-theme", "light");
             }
         },
         YSG() {
             // user:YSG
             // pass:5409
-            this.$router.push('login')
+            if (this.Login !== "Login") {
+                this.$notify({
+                    title: '哦,上帝,你不会有健忘症吧？',
+                    duration: 1000,
+                    message: this.$createElement('i', {style: 'color: teal'}),
+                    type: 'success',
+                    position: 'top-right',
+                });
+            } else {
+                this.$router.push("login");
+            }
+
         },
         vue() {
-            this.$store.commit('cardinfo', 'vue')
-            console.log(this.$store.state.card.parameter)
-            this.$router.push('/')
+            this.$store.commit("cardinfo", "vue");
+            console.log(this.card.parameter);
+            this.$router.push("/");
         },
         node() {
-            this.$store.commit('cardinfo', 'node')
-            console.log(this.$store.state.card.parameter)
-            this.$router.push('/')
+            this.$store.commit("cardinfo", "node");
+            console.log(this.card.parameter);
+            this.$router.push("/");
         },
         java() {
-            this.$store.commit('cardinfo', 'java')
-            console.log(this.$store.state.card.parameter)
-            this.$router.push('/')
+            this.$store.commit("cardinfo", "java");
+            console.log(this.card.parameter);
+            this.$router.push("/");
         },
         spring() {
-            this.$store.commit('cardinfo', 'spring')
-            console.log(this.$store.state.card.parameter)
-            this.$router.push('/')
+            this.$store.commit("cardinfo", "spring");
+            console.log(this.card.parameter);
+            this.$router.push("/");
         },
         uniapp() {
-            this.$store.commit('cardinfo', 'uniapp')
-            console.log(this.$store.state.card.parameter)
-            this.$router.push('/')
+            this.$store.commit("cardinfo", "uniapp");
+            console.log(this.card.parameter);
+            this.$router.push("/");
         },
         chat() {
-            this.$store.commit('cardinfo', 'chat')
-            console.log(this.$store.state.card.parameter)
-            this.$router.push('/')
+            this.$store.commit("cardinfo", "chat");
+            console.log(this.card.parameter);
+            this.$router.push("/");
         },
-
     },
     mounted() {
-        window.document.documentElement.setAttribute("data-theme", 'light');
+        window.document.documentElement.setAttribute("data-theme", "light");
     },
     created() {
     }
-}
+};
 </script>
+
 <style lang="scss" scoped>
 @import '@/assets/scss/common/common';
 
@@ -153,10 +164,17 @@ export default {
 }
 
 .主体 {
+  // todo 响应式间隔
   margin: 7.5rem 10rem 0;
   //max-width: 135rem;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .主体 {
+    margin: 1rem 2rem 0;
+  }
 }
 
 .主要 {
@@ -190,14 +208,12 @@ export default {
   justify-content: center;
 }
 
-.导航栏 span:hover {
+.导航栏 span:hover,
+.导航栏 span:active,
+.用户栏 span:hover,
+.用户栏 span:active {
   color: #ff000090;
 }
-
-.导航栏 span:active {
-  color: #000;
-}
-
 
 .开关 {
   font-family: Broadway, serif;
@@ -228,10 +244,10 @@ export default {
 
 .icon {
   text-align: right;
-}
 
-.icons {
-  position: relative;
-  right: -90%;
+  .icons {
+    position: relative;
+    right: -90%;
+  }
 }
 </style>

@@ -11,6 +11,8 @@ export default new Vuex.Store({
         },
         card: {
             aid: null,
+            title: null,
+            dark: false,
             parameter: 'vue'
         }
     },
@@ -27,6 +29,12 @@ export default new Vuex.Store({
         },
         aidinfo(state, aid){
             state.card.aid = aid
+        },
+        titleinfo(state, title){
+            state.card.title = title
+        },
+        darkinfo(state, dark){
+            state.card.dark = dark
         }
     },
     actions: {},

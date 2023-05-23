@@ -6,6 +6,7 @@ import list from "@/views/home/list.vue";
 import login from "@/views/Login.vue";
 //子页面
 import Read from "@/views/home/Read.vue";
+import Read_dark from "@/views/home/Read_dark.vue";
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,11 @@ const router = new VueRouter({
             path: '/Read',
             name: 'Read',
             component: Read,
+        },
+        {
+            path: '/Read_dark',
+            name: 'Read_dark',
+            component: Read_dark,
         }
     ]
 })

@@ -1,6 +1,6 @@
 <template>
     <div class="list">
-        <div v-for="(item, index) in items" :key="index" v-on:click="handleClick(index)">
+        <div v-for="(item, index) in items" :key="index" @click="handleClick(index)">
             <div :id="index" class="card">
                 <div class="card-image">
                     <el-image
@@ -28,18 +28,14 @@
 <script>
 // todo 夜间模式是否要给图片添加遮罩
 // todo 当后台返回的数据为空时，要不要添加一个空状态提示
-// todo 添加卡片点击事件，点击后将aid发给后台返回文章正文
-// todo 后台api，好像存在Spring Security鉴权问题，token[已解决]
-// todo 阅读页面施工中。。。。。。
-// todo 登录界面施工中.........
+// todo 添加卡片点击事件，点击后将aid发给后台返回文章正文【已解决】
+// todo 是否添加卡片点击动画 【css动画orJS动画orUI框架的自带动画】
+// todo 后台api，好像存在Spring Security鉴权问题token[已解决]
+// todo 阅读页面施工中。。。。。。90%
+// todo 登录界面施工中....50%
 import axios from "axios";
-import {mapState} from "vuex";
 
 export default {
-    // vuex的一个函数 将vuex的数据转换成计算型
-    computed: {
-        ...mapState(['card']),
-    },
     data() {
         return {
             items: []
@@ -48,13 +44,14 @@ export default {
     methods: {
         //列表点击事件，列表中index个中的aid
         handleClick(index) {
-            this.$store.commit('aidinfo',this.items[index].aid)
+            this.$store.commit('aidinfo', this.items[index].aid)
+            this.$store.commit('titleinfo', this.items[index].title)
             console.log(this.$store.state.card.aid)
+            console.log(this.$store.state.card.title)
             this.$router.push('/Read')
         },
     },
     mounted() {
-        // vuex中的数据改变时，重新请求并渲染
         this.$store.watch(
             (state) => state.card.parameter,
             () => {
@@ -97,6 +94,7 @@ export default {
 
 <style lang="scss" scoped>
 .list {
+  height: 80vh;
   margin-left: -2rem;
   display: flex;
   flex-wrap: wrap;
@@ -165,5 +163,15 @@ export default {
     font-size: 16px;
     word-wrap: break-word;
   }
+}
+
+.card {
+  position: relative;
+  transition: transform .3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 </style>

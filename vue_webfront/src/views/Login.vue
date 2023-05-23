@@ -89,7 +89,7 @@ export default {
                 },
                 withCredentials: true
             },).then(res => {
-                if (res.status === 200) {
+                if (res.data.status === 200) {
                     console.log("登录成功");
 
                     this.$store.commit('userinfo', this.ruleForm.username)
@@ -104,7 +104,7 @@ export default {
                         type: 'success',
                         position: 'top-right'
                     });
-                } else if (res.status === 401) {
+                } else if (res.data.status === 401) {
                     console.log("用户名密码错误");
                     console.log(JSON.stringify(res.data));
                     {
