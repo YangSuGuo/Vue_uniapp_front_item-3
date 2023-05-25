@@ -74,8 +74,9 @@ export default {
     },
 
     created() {
+        // todo 报错找不到parameter[无影响]
         axios.post('http://localhost:8080/api/auth/essay/list?', {
-            parameter: this.$store.state.card.parameter
+           parameter: this.$store.state.card.parameter
         }, {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'

@@ -82,7 +82,6 @@
 
 <script>
 import {mapState} from "vuex";
-// todo 用户名需要vuex存储，
 // todo 可选：持久化方案 1，springboot框架持久化，2.vuex，添加插件持久化，3.cook存储，4。使用浏览器本地化存储
 export default {
     computed: {
@@ -118,32 +117,32 @@ export default {
         },
         vue() {
             this.$store.commit("cardinfo", "vue");
-            console.log(this.card.parameter);
+            console.log(this.$store.state.card.parameter);
             this.$router.push("/");
         },
         node() {
             this.$store.commit("cardinfo", "node");
-            console.log(this.card.parameter);
+            console.log(this.$store.state.card.parameter);
             this.$router.push("/");
         },
         java() {
             this.$store.commit("cardinfo", "java");
-            console.log(this.card.parameter);
+            console.log(this.$store.state.card.parameter);
             this.$router.push("/");
         },
         spring() {
             this.$store.commit("cardinfo", "spring");
-            console.log(this.card.parameter);
+            console.log(this.$store.state.card.parameter);
             this.$router.push("/");
         },
         uniapp() {
             this.$store.commit("cardinfo", "uniapp");
-            console.log(this.card.parameter);
+            console.log(this.$store.state.card.parameter);
             this.$router.push("/");
         },
         chat() {
             this.$store.commit("cardinfo", "chat");
-            console.log(this.card.parameter);
+            console.log(this.$store.state.card.parameter);
             this.$router.push("/");
         },
     },

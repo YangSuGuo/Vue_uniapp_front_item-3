@@ -1,58 +1,59 @@
 <template>
-    <div id="app">
-        <div class="背景">
-            <div id="登录框体">
-                <div class="表单框体">
-                    <h1 class="登录标题">Login</h1>
-                    <el-form
-                            ref="ruleForm"
-                            :model="ruleForm"
-                            :rules="rules"
-                            class="表单"
-                            label-width="100px"
-                            status-icon
-                            style="margin-top: 60px">
-                        <el-form-item label="用户名：" prop="pass">
-                            <el-input
-                                    v-model="ruleForm.username"
-                                    autocomplete="off"
-                                    clearable
-                                    placeholder="请输入账号"
-                                    prefix-icon="el-icon-user"
-                                    style="width: 325px;opacity: 0.3"
-                                    type="text"
-                            ></el-input>
-                        </el-form-item>
-                        <el-form-item label="密 码：" prop="checkPass">
-                            <el-input
-                                    v-model="ruleForm.password"
-                                    autocomplete="off"
-                                    clearable
-                                    placeholder="请输入密码"
-                                    prefix-icon="el-icon-lock"
-                                    show-password
-                                    style="width: 325px;opacity: 0.3"
-                                    type="password"
-                            ></el-input>
-                        </el-form-item>
-                        <el-form-item>
-                            <div
-                                    class="登录"
-                                    style="margin-top: 15px;margin-left: 200px;">
-                                <el-button
-                                        v-loading.fullscreen.lock="fullscreenLoading"
-                                        icon="el-icon-right"
-                                        round="round"
-                                        style="zoom:195%; opacity: 0.7;"
-                                        type="primary"
-                                        @click="login">
-                                </el-button>
+    <div id="Login">
+        <el-row :gutter="0">
+            <el-col :lg="12" :md="12" :sm="12" :xl="12" :xs="12">
+                <div class="introduce">
+                    <div class="background">
+                        <span style="font-size: 60px; color: white;margin-right: 80px">欢迎你</span>
+                        <div class="表单框体">
+                            <div class="input">
+                                <el-form
+                                        ref="ruleForm"
+                                        :model="ruleForm"
+                                        :rules="rules"
+                                        class="表单"
+                                        label-width="70px"
+                                        status-icon>
+                                    <el-form-item label="用户名：" prop="pass">
+                                        <el-input
+                                                v-model="ruleForm.username"
+                                                autocomplete="off"
+                                                clearable
+                                                placeholder="请输入账号"
+                                                prefix-icon="el-icon-user"
+                                                style="width: 200px;opacity: 1"
+                                                type="text"
+                                        ></el-input>
+                                    </el-form-item>
+                                    <el-form-item label="密 码：" prop="checkPass">
+                                        <el-input
+                                                v-model="ruleForm.password"
+                                                autocomplete="off"
+                                                clearable
+                                                placeholder="请输入密码"
+                                                prefix-icon="el-icon-lock"
+                                                show-password
+                                                style="width: 200px;opacity: 1"
+                                                type="password"
+                                        ></el-input>
+                                    </el-form-item>
+                                </el-form>
                             </div>
-                        </el-form-item>
-                    </el-form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </el-col>
+            <el-col :lg="12" :md="12" :sm="12" :xl="12" :xs="12">
+                <div class="introduce">
+                    <div class="background2">
+                        <div class="ok" @click="login">
+                            <i class="el-icon-right" style="zoom:800%;color: white"></i>
+                        </div>
+<!--                        <span style="font-size: 60px; color: #24292e;margin-left: 35px">我的主人</span>-->
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
     </div>
 </template>
 
@@ -76,6 +77,8 @@ export default {
                     {required: true, message: ' ', trigger: 'blur'},
                     {min: 3, max: 20, message: '长度在 3 到 20 个字符', trigger: 'blur'}],
             },
+            // todo 这似乎是个隐藏属性
+            fullscreenLoading: false,
         };
     },
     methods: {
@@ -126,5 +129,63 @@ export default {
 </script>
 
 <style scoped>
+#Login{
+    margin-top: 20px;
+}
+.introduce {
+    /*border-radius: 4px;*/
+    min-height: 59vh;
+}
 
+.background {
+    width: 100%;
+    height: 55vh;
+    background-color: #24292e;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.表单框体 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 300px;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.input {
+    margin-top: 20px;
+}
+
+.background2 {
+    width: 100%;
+    height: 55vh;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.ok {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 144px;
+    background-color: #24292e;
+}
 </style>

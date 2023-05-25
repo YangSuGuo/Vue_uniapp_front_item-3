@@ -57,11 +57,9 @@
 </template>
 
 <script>
-// todo 添加返回上一级功能【页头】
-// todo 夜间模式
-// todo 渲染长文本有点。。。。
-// todo 适配夜间模式
-// todo 目录？字体？
+// todo 添加返回上一级功能【页头】【ok】
+// todo 夜间模式未适配【不想】
+// todo 渲染长文本有割裂
 import axios from "axios";
 
 export default {
@@ -96,14 +94,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import '@/assets/scss/common/common';
-
-#Read {
-    @include background_color("background_color");
-    @include font_color("text-color");
-}
-
+<style>
 #Read {
     margin: 7.5rem 20rem 0;
 }
