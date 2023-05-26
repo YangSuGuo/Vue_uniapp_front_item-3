@@ -1,0 +1,20 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue"
+    }
+  },
+  "pages": [
+
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+    }
+  }
+}

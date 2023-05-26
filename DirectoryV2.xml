@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trees>
+    <tree path="/Springboot_backend/src/main/java/com/example/config" title="配置"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/controller" title="接口" extension="" presentableText=""
+          tooltipTitle="" icon="" textColor="" backgroundColor=""/>
+    <tree path="/Springboot_backend/src/main/java/com/example/entity" title="实体"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/mapper" title="映射"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/service" title="数据库"/>
+    <tree path="/Springboot_backend/src/main/resources/banner.txt" title="打印图案"/>
+    <tree path="/Springboot_backend/src/main/resources/application.yaml" title="springboot配置"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/service/impl" title="实现类"/>
+    <tree path="/uniapp_frontend/pages" title="页面"/>
+    <tree path="/uniapp_frontend/static" title="资源"/>
+    <tree path="/uniapp_frontend/static/tabbar" title="导航栏图标"/>
+    <tree path="/uniapp_frontend/pages.json" title="导航路由"/>
+    <tree path="/uniapp_frontend/manifest.json" title="配置文件" extension="" presentableText="" tooltipTitle="" icon=""
+          textColor="" backgroundColor=""/>
+    <tree path="/uniapp_frontend/index.html" title="头文件"/>
+    <tree path="/uniapp_frontend/pages/secondary" title="次要页面"/>
+    <tree path="/uniapp_frontend/pages/Home.vue" title="首页"/>
+    <tree path="/uniapp_frontend/pages/My.vue" title="我的"/>
+    <tree path="/uniapp_frontend/pages/Write.vue" title="写作"/>
+    <tree path="/uniapp_frontend/pages/secondary/Login.vue" title="登录"/>
+    <tree path="/uniapp_frontend/pages/secondary/Register.vue" title="注册"/>
+    <tree path="/vue_webfront/public" title="公共"/>
+    <tree path="/vue_webfront/package.json" title="脚本文件"/>
+    <tree path="/vue_webfront/package-lock.json" title="依赖列表"/>
+    <tree path="/vue_webfront/index.html" title="头文件"/>
+    <tree path="/vue_webfront/src/router" title="路由"/>
+    <tree path="/vue_webfront/src/assets" title="资源"/>
+    <tree path="/vue_webfront/src/public" title="依赖引入"/>
+    <tree path="/vue_webfront/src/views" title="子页面" extension="" presentableText="" tooltipTitle="" icon=""
+          textColor="" backgroundColor=""/>
+    <tree path="/vue_webfront/src/components" title="主页面"/>
+    <tree path="/vue_webfront/src/stores" title="vuex"/>
+    <tree path="/vue_webfront/src/components/Home.vue" title="首页"/>
+    <tree path="/vue_webfront/src/public/ElementUI.js" title="UI框架"/>
+    <tree path="/vue_webfront/src/public/ECharts.js" title="JS图表"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/service/impl/AuthorizeServiceImpl.java" title="接口"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/config/SecurityConfiguration.java" title="常规配置"/>
+    <tree path="/vue_webfront/src/public/vuesax.js" title="UI框架"/>
+    <tree path="/vue_webfront/src/public/ant-design-vue.js" title="UI框架"/>
+    <tree path="/vue_webfront/src/views/home/list.vue" title="卡片"/>
+    <tree path="/vue_webfront/src/views/home/Read.vue" title="阅读"/>
+    <tree path="/vue_webfront/src/views/Login.vue" title="登录"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/controller/AuthorizeController.java" title="api"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/entity/user/Account.java" title="用户"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/entity/writing/Essay.java" title="文章"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/entity/RestBean.java" title="状态码"/>
+    <tree path="/Springboot_backend/src/main/java/com/example/service/AuthorizeService.java" title="操作接口"/>
+    <tree path="/vue_webfront/src/public/vue-mavon-editor.js" title="MD渲染" extension="" presentableText=""
+          tooltipTitle="" icon="" textColor="" backgroundColor=""/>
+</trees>

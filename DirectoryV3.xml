@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <trees>
+     <tree path="/uniapp_wxfront/uni_modules" title="官方ui"/>
+     <tree path="/uniapp_wxfront/components" title="ThorUI"/>
+ </trees>
