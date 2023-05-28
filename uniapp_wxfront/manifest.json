@@ -16,6 +16,11 @@
             "autoclose" : true,
             "delay" : 0
         },
+		"safearea" : {
+				 "bottom" : {
+				      "offset" : "none"
+				 }
+			},
         "modules" : {},
         /* 模块配置 */
         "distribute" : {
@@ -50,11 +55,16 @@
     /* 快应用特有相关 */
     "mp-weixin" : {
         /* 小程序特有相关 */
-        "appid" : "",
+        "appid" : "wxba174023b38ce425",
         "setting" : {
             "urlCheck" : false
         },
         "usingComponents" : true
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "h5" : {
+        "devServer" : {
+            "port" : 8008
+        }
+    }
 }

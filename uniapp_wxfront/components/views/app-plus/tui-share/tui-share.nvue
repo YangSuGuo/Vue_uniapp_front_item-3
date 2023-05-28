@@ -1,8 +1,8 @@
 <template>
-	<view class="container">
+	<view class="Login">
 		<text class="tui-share-title">分享到</text>
 		<view class="tui-share-list">
-			<view class="tui-share-item" hover-class="tui-hover" :hover-stay-time="150" v-for="(item, index) in shareList" :key="index">
+			<view v-for="(item, index) in shareList" :key="index" :hover-stay-time="150" class="tui-share-item" hover-class="tui-hover">
 				<view class="tui-share-icon"><image :src="'/static/images/share/'+item.icon" class="tui-icon-app"></image></view>
 				<text class="tui-share-text">{{ item.name }}</text>
 			</view>
@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.Login {
 	padding: 0;
 	background-color: #e8e8e8;
 	height:500rpx;

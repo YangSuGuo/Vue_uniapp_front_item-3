@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/Home/Home",
+    "pages/Login/Login",
+    "pages/Writing/Writing",
+    "pages/Read/Read"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "iconWidth": "20px",
+    "selectedColor": "#0eb0c9",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/Home/Home",
+        "iconPath": "static/tabBar/最新资讯-03.png",
+        "selectedIconPath": "static/tabBar/最新资讯-03 (1).png",
+        "text": "文章"
+      },
+      {
+        "pagePath": "pages/Writing/Writing",
+        "iconPath": "static/tabBar/学习 (3).png",
+        "selectedIconPath": "static/tabBar/学习 (3) (1).png",
+        "text": "写作"
+      },
+      {
+        "pagePath": "pages/Login/Login",
+        "iconPath": "static/tabBar/用户 (2).png",
+        "selectedIconPath": "static/tabBar/用户 (2) (1).png",
+        "text": "用户"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

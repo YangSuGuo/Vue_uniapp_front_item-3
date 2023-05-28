@@ -243,7 +243,6 @@ export default {
 
 .icon {
   text-align: right;
-
   .icons {
     position: relative;
     right: -90%;

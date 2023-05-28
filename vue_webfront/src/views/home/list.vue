@@ -62,7 +62,7 @@ export default {
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded'
                     },
-                    withCredentials: true
+                    // withCredentials: true
                 }).then(res => {
                     this.items = res.data
                     // console.log("前端返回的res:", res)
