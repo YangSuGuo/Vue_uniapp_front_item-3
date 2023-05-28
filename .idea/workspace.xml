@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84eb48dc-66ac-4043-baa5-8a35521768ff" name="更改" comment="uniapp item3 项目创建【ThorUI】">
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/.hbuilderx/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/pages/Home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/pages/Login/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/pages/Read/Read.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/pages/Writing/Writing.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/icons/qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/icons/wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/icons/wx1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/icons/zfb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/学习 (3) (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/学习 (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/最新资讯-03 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/最新资讯-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/用户 (2) (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/用户 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/stores/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.automator/mp-weixin/.automator.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/vendor.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Home/Home.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Login/Login.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Read/Read.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Read/Writing.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Writing.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Writing/Read/Read.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Writing/Writing.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/app.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/main.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/vendor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Home/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Home/Home.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Home/Home.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Home/Home.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Login/Login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Login/Login.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Read.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Read.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Read.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Writing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Writing.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing/Read/Read.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing/Read/Read.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing/Read/Read.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing/Writing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing/Writing.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing/Writing.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/project.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/project.private.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/c3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/c4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/c5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/c6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/c7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/c8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/c9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/customicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/customicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/学习 (3) (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/学习 (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/最新资讯-03 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/最新资讯-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/用户 (2) (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/用户 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/uni.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DirectoryV2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DirectoryV3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DirectoryV3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/components/views/app-plus/tui-share/tui-share.nvue" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/components/views/app-plus/tui-share/tui-share.nvue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/uni_modules/uni-scss/styles/setting/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/uni_modules/uni-scss/styles/setting/_text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_webfront/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_webfront/src/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_webfront/src/views/home/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_webfront/src/views/home/list.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_COMMON_BRANCH" value="master" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/vue_webfront/package.json" />
+  </component>
+  <component name="ProjectId" id="2PJfJwUR645fGNH2OFUGRTTlLB5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectStartupLocalConfiguration">
+    <configurations>
+      <configuration id="npm.dev" name="dev" />
+      <configuration id="Spring Boot.SpringbootBackendApplication" name="SpringbootBackendApplication" />
+    </configurations>
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="flattenModules" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "Android Studio default JDK",
+    "last_opened_file_path": "F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "qodana.show.link.project.notification": "false",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "settings.sync",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "bb732d49270434013c1d273dd4051cb1",
+    "ts.external.directory.path": "D:\\Program Files\\IntelliJ IDEA 2023.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
+    ],
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\uniapp_wxfront" />
+      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\uniapp_wxfront\static\icons" />
+      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\uniapp_wxfront\static\tabBar" />
+      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\vue_webfront\public" />
+      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\vue_webfront\src\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\vue_webfront\src\assets\scss\css" />
+      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\vue_webfront\src\assets\scss\common" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.controller" />
+      <recent name="com.example" />
+      <recent name="com.example.service.impl" />
+      <recent name="com.example.entity" />
+      <recent name="com.example.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootBackendApplication">
+    <configuration name="SpringbootBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Springboot_backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringbootBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vue_webfront/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.SpringbootBackendApplication" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="84eb48dc-66ac-4043-baa5-8a35521768ff" name="更改" comment="" />
+      <created>1683180036336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683180036336</updated>
+      <workItem from="1683180037533" duration="1486000" />
+      <workItem from="1683181794891" duration="170000" />
+      <workItem from="1683182094618" duration="731000" />
+      <workItem from="1683182876675" duration="3823000" />
+      <workItem from="1683187097609" duration="1290000" />
+      <workItem from="1683189919953" duration="14549000" />
+      <workItem from="1683259223964" duration="9174000" />
+      <workItem from="1683277874147" duration="675000" />
+      <workItem from="1683280452714" duration="3793000" />
+      <workItem from="1683303632672" duration="5386000" />
+      <workItem from="1683338070575" duration="3533000" />
+      <workItem from="1683356100687" duration="1119000" />
+      <workItem from="1683358414375" duration="6263000" />
+      <workItem from="1683429802752" duration="1860000" />
+      <workItem from="1683445005161" duration="6573000" />
+      <workItem from="1683470308739" duration="613000" />
+      <workItem from="1683475810229" duration="19000" />
+      <workItem from="1683594118800" duration="4005000" />
+      <workItem from="1683600290990" duration="2187000" />
+      <workItem from="1683605615996" duration="1205000" />
+      <workItem from="1683610294343" duration="794000" />
+      <workItem from="1683611129029" duration="6280000" />
+      <workItem from="1683635525000" duration="3377000" />
+      <workItem from="1683640205379" duration="5256000" />
+      <workItem from="1683651803491" duration="667000" />
+      <workItem from="1683687162623" duration="8180000" />
+      <workItem from="1683732276790" duration="40000" />
+      <workItem from="1683732368410" duration="10699000" />
+      <workItem from="1683743389113" duration="145000" />
+      <workItem from="1683765442664" duration="9062000" />
+      <workItem from="1683777865738" duration="1357000" />
+      <workItem from="1683779853630" duration="6000" />
+      <workItem from="1683779871800" duration="711000" />
+      <workItem from="1683780593181" duration="11464000" />
+      <workItem from="1683857741860" duration="6322000" />
+      <workItem from="1683864107842" duration="3949000" />
+      <workItem from="1683951567151" duration="2000" />
+      <workItem from="1684050015571" duration="63000" />
+      <workItem from="1684050315824" duration="4590000" />
+      <workItem from="1684136292300" duration="606000" />
+      <workItem from="1684141091724" duration="2213000" />
+      <workItem from="1684161130275" duration="608000" />
+      <workItem from="1684198620691" duration="37000" />
+      <workItem from="1684198859261" duration="85000" />
+      <workItem from="1684198951497" duration="11489000" />
+      <workItem from="1684239498367" duration="1070000" />
+      <workItem from="1684240578659" duration="10000" />
+      <workItem from="1684240598320" duration="1663000" />
+      <workItem from="1684295734802" duration="271000" />
+      <workItem from="1684324576504" duration="941000" />
+      <workItem from="1684330210506" duration="6669000" />
+      <workItem from="1684371786466" duration="19258000" />
+      <workItem from="1684416782958" duration="40000" />
+      <workItem from="1684419722277" duration="5094000" />
+      <workItem from="1684424830630" duration="653000" />
+      <workItem from="1684425493923" duration="351000" />
+      <workItem from="1684473108624" duration="7716000" />
+      <workItem from="1684557243349" duration="5604000" />
+      <workItem from="1684641579632" duration="5550000" />
+      <workItem from="1684665894568" duration="30000" />
+      <workItem from="1684667096552" duration="14970000" />
+      <workItem from="1684729857862" duration="1722000" />
+      <workItem from="1684733471192" duration="2301000" />
+      <workItem from="1684752321356" duration="78000" />
+      <workItem from="1684753133018" duration="13251000" />
+      <workItem from="1684771470583" duration="538000" />
+      <workItem from="1684806340232" duration="4063000" />
+      <workItem from="1684810475820" duration="5181000" />
+      <workItem from="1684818829699" duration="7083000" />
+      <workItem from="1684827046048" duration="2984000" />
+      <workItem from="1684848544642" duration="10548000" />
+      <workItem from="1684914360389" duration="2340000" />
+      <workItem from="1684920577381" duration="337000" />
+      <workItem from="1684925150449" duration="2000" />
+      <workItem from="1684932582476" duration="216000" />
+      <workItem from="1684976631839" duration="17474000" />
+      <workItem from="1685023390115" duration="67000" />
+      <workItem from="1685023860400" duration="121000" />
+      <workItem from="1685023990196" duration="4000" />
+      <workItem from="1685024014677" duration="23000" />
+      <workItem from="1685024490506" duration="198000" />
+      <workItem from="1685024698094" duration="468000" />
+      <workItem from="1685025189530" duration="224000" />
+      <workItem from="1685026104705" duration="136000" />
+      <workItem from="1685078176226" duration="97000" />
+      <workItem from="1685095797033" duration="11026000" />
+      <workItem from="1685156173020" duration="77000" />
+      <workItem from="1685162455039" duration="14336000" />
+      <workItem from="1685192916728" duration="115000" />
+      <workItem from="1685200933901" duration="5783000" />
+      <workItem from="1685243274113" duration="388000" />
+      <workItem from="1685244331152" duration="9000" />
+      <workItem from="1685271348194" duration="7626000" />
+    </task>
+    <task id="LOCAL-00001" summary="开始">
+      <created>1683186865946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683186865946</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改结构，推荐注册">
+      <created>1683204457319</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683204457319</updated>
+    </task>
+    <task id="LOCAL-00003" summary="vue环境配置">
+      <created>1683615056308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683615056308</updated>
+    </task>
+    <task id="LOCAL-00004" summary="home开始">
+      <created>1683733671390</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683733671390</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Home首页框架完成">
+      <created>1683862058522</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683862058522</updated>
+    </task>
+    <task id="LOCAL-00006" summary="更新接口，vue网页卡片初步完成">
+      <created>1684394411308</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684394411308</updated>
+    </task>
+    <task id="LOCAL-00007" summary="更新接口，vue网页卡片初步完成">
+      <created>1684423578722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684423578722</updated>
+    </task>
+    <task id="LOCAL-00008" summary="更新接口，vue网页卡片初步完成">
+      <created>1684423877166</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684423877166</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1">
+      <created>1684424058176</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684424058176</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1.1">
+      <created>1684646514619</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684646514619</updated>
+    </task>
+    <task id="LOCAL-00011" summary="完成home页面的基本框架">
+      <created>1684765092642</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684765092643</updated>
+    </task>
+    <task id="LOCAL-00012" summary="阅读页面获取数据成功">
+      <created>1684771767183</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684771767183</updated>
+    </task>
+    <task id="LOCAL-00013" summary="优化结构">
+      <created>1684859146431</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684859146431</updated>
+    </task>
+    <task id="LOCAL-00014" summary="vue item-3完成">
+      <created>1685002432792</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685002432792</updated>
+    </task>
+    <task id="LOCAL-00015" summary="vue item-3完成">
+      <created>1685025135796</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1685025135796</updated>
+    </task>
+    <task id="LOCAL-00016" summary="uniapp item3 项目创建【ThorUI】">
+      <created>1685096479541</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1685096479541</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="6fa724ba-65b3-436a-9fbe-cf64616b8922">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/Springboot_backend" />
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="91d2c8a6-fe7f-413d-af0f-d0f18926f1a3">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/Springboot_backend" />
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/Springboot_backend" />
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="开始" />
+    <MESSAGE value="修改结构，推荐注册" />
+    <MESSAGE value="vue环境配置" />
+    <MESSAGE value="home开始" />
+    <MESSAGE value="Home首页框架完成" />
+    <MESSAGE value="更新接口，vue网页卡片初步完成" />
+    <MESSAGE value="1" />
+    <MESSAGE value="1.1" />
+    <MESSAGE value="完成home页面的基本框架" />
+    <MESSAGE value="阅读页面获取数据成功" />
+    <MESSAGE value="优化结构" />
+    <MESSAGE value="vue item-3完成" />
+    <MESSAGE value="uniapp item3 项目创建【ThorUI】" />
+    <option name="LAST_COMMIT_MESSAGE" value="uniapp item3 项目创建【ThorUI】" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Vue_Uniapp_Item_3$SpringbootBackendApplication.ic" NAME="SpringbootBackendApplication 覆盖结果" MODIFIED="1684920719790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
