@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84eb48dc-66ac-4043-baa5-8a35521768ff" name="更改" comment="uniapp 首页，登录界面初步完成">
+    <list default="true" id="84eb48dc-66ac-4043-baa5-8a35521768ff" name="更改" comment="uniapp 阅读界面初步完成，差相关逻辑">
       <change afterPath="$PROJECT_DIR$/uniapp_wxfront/components/gaoyia-parse/components/wxParseAudio.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uniapp_wxfront/components/gaoyia-parse/components/wxParseImg.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uniapp_wxfront/components/gaoyia-parse/components/wxParseTable.vue" afterDir="false" />
@@ -554,7 +554,7 @@
       <workItem from="1685412473876" duration="156000" />
       <workItem from="1685412640444" duration="4782000" />
       <workItem from="1685418779177" duration="9645000" />
-      <workItem from="1685507610193" duration="8251000" />
+      <workItem from="1685507610193" duration="8617000" />
     </task>
     <task id="LOCAL-00001" summary="开始">
       <created>1683186865946</created>
@@ -682,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685285958830</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="uniapp 阅读界面初步完成，差相关逻辑">
+      <created>1685519806194</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1685519806194</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -816,7 +823,8 @@
     <MESSAGE value="vue item-3完成" />
     <MESSAGE value="uniapp item3 项目创建【ThorUI】" />
     <MESSAGE value="uniapp 首页，登录界面初步完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="uniapp 首页，登录界面初步完成" />
+    <MESSAGE value="uniapp 阅读界面初步完成，差相关逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="uniapp 阅读界面初步完成，差相关逻辑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
