@@ -21,73 +21,45 @@
 
 <script>
 	export default {
-		onLoad() {
-			/**
-			 *  获取文章列表
-			 *  parameter 文章标签
-			 *  返回 文章内容 json utf8
-			 *  todo vuex
-			 */
-			uni.request({
-				url: 'http://localhost:8080/api/auth/essay/list',
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/x-www-form-urlencoded'
-				},
-				data: {
-					parameter: 'spring'
-				},
-				success: res => {
-					console.log(res)
-				},
-				fail: err => {
-					console.log(err)
-				}
-			})
-		},
 		data() {
 			return {
 				// 后台模拟数据：http://localhost:8080/api/auth/essay/list?parameter=spring
 				// 文章正文：md格式【富文本解析】
 				// todo 连接后台
-				items: [{
-						"aid": 6,
-						"writer": "青空の霞光",
-						"label": "spring",
-						"photo": null,
-						"background": "https://img1.imgtp.com/2023/03/21/SkThZL3b.jpg",
-						"pageview": 0,
-						"title": "SpringBoot一站式开发",
-						"text": null,
-						"writingtime": 1697472000000,
-						"articleoverview": "我们每创建一个新的Web应用程序，基本都会使用同样的方式去整合框架，我们完全可以将一些重复的配置作为约定，只要框架遵守这个约定，为我们提供默认的配置就好，这样就不用我们再去配置了，约定优于配置！"
-					},
-					{
-						"aid": 7,
-						"writer": "青空の霞光",
-						"label": "spring",
-						"photo": null,
-						"background": "https://img1.imgtp.com/2023/05/23/n2MSOD0o.jpg",
-						"pageview": 0,
-						"title": "SpringBoot其他框架",
-						"text": null,
-						"writingtime": 1697472000000,
-						"articleoverview": "通过了解其他的SpringBoot框架，我们就可以在我们自己的Web服务器上实现更多更高级的功能。"
-					},
-					{
-						"aid": 8,
-						"writer": "青空の霞光",
-						"label": "spring",
-						"photo": null,
-						"background": "https://img1.imgtp.com/2023/05/23/ZqwbXsd4.jpg",
-						"pageview": 0,
-						"title": "Linux操作系统与项目部署",
-						"text": null,
-						"writingtime": 1697472000000,
-						"articleoverview": "肯•汤普森为首的贝尔实验室研究人员吸取了 Multics 工程计划失败的经验教训，于 1969 年实现了分时操作系统的雏形，在1970 年该操作系统正式取名为UNIX"
-					}
-				]
+				items: []
 			}
+		},
+		onLoad() {
+			/**
+			 * 获取文章列表
+			 * @param parameter 文章分类
+			 * @return  json 卡片列表
+			 * todo vuex状态传参
+			 * todo 设置为vuex计算型
+			 * todo 请求传参错误
+			 */
+
+			// this.$store.commit('cardinfo',"spring")
+			let card_parameter = this.$store.state.card.parameter
+			console.log(card_parameter)
+
+			uni.request({
+				url: 'http://localhost:8080/api/auth/essay/list',
+				method: 'POST',
+				header: {
+					'content-type': 'application/x-www-form-urlencoded'
+				},
+				data: {
+					parameter: card_parameter
+				},
+				success: res => {
+					console.log(res)
+					this.items = res.data
+				},
+				fail: err => {
+					console.log(err)
+				}
+			})
 		},
 		computed: {
 			card() {

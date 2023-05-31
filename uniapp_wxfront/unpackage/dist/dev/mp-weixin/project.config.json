@@ -19,7 +19,7 @@
     "condition": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.32.1",
+  "libVersion": "2.32.0",
   "appid": "wxba174023b38ce425",
   "projectname": "uniapp_wxfront",
   "condition": {},

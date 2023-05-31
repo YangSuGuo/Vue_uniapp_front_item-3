@@ -25,7 +25,7 @@
 				"navigationBarTitleText": "写作笔记",
 				"enablePullDownRefresh": false
 			}
-		},{
+		}, {
 			"path": "pages/Read/Read",
 			"style": {
 				"navigationBarTitleText": "阅读",
@@ -66,6 +66,10 @@
 				"iconPath": "static/tabBar/用户 (2).png",
 				"selectedIconPath": "static/tabBar/用户 (2) (1).png",
 				"text": "用户"
+			},
+			{
+				"pagePath": "pages/Read/Read",
+				"text": "阅读"
 			}
 		]
 	}

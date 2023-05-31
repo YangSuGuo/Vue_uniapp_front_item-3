@@ -55,4 +55,14 @@
     <tree path="/vue_webfront/src/public/vue-mavon-editor.js" title="MD渲染" extension="" presentableText=""
           tooltipTitle="" icon="" textColor="" backgroundColor=""/>
     <tree path="/uniapp_wxfront/stores" title="vuex"/>
+    <tree path="/uniapp_wxfront/pages/Read" title="阅读"/>
+    <tree path="/uniapp_wxfront/pages/Login" title="登录"/>
+    <tree path="/uniapp_wxfront/pages/Home" title="首页"/>
+    <tree path="/uniapp_wxfront/pages/Writing" title="写作"/>
+    <tree path="/uniapp_wxfront/unpackage" title="编译"/>
+    <tree path="/uniapp_wxfront/pages.json" title="路由配置"/>
+    <tree path="/uniapp_wxfront/wx id.md" title="微信ID"/>
+    <tree path="/uniapp_wxfront/manifest.json" title="高级配置"/>
+    <tree path="/uniapp_wxfront/static/icons" title="图标集"/>
+    <tree path="/uniapp_wxfront/static/tabBar" title="导航栏图标"/>
 </trees>

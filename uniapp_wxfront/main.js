@@ -1,8 +1,7 @@
 // #ifndef VUE3
 import Vue from 'vue'
 import App from './App'
-
-import store from './stores/index.js'
+import store from './store/index.js'
 Vue.prototype.$store = store
 
 Vue.config.productionTip = false

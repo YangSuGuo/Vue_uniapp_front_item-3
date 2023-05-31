@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "个人资料",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "tui-button": "/components/thorui/tui-button/tui-button"
+  }
 }

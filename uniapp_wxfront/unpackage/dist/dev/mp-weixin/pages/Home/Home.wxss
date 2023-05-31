@@ -6,9 +6,19 @@
   margin-left: 25rpx;
   margin-right: 25rpx;
 }
+.title-background {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  width: 180rpx;
+  background-color: rgba(242, 206, 43, 0.55);
+  border-radius: 8rpx;
+  box-shadow: 0px 2rpx 8rpx rgba(0, 0, 0, 0.15);
+}
 .card-text {
+  position: relative;
+  top: -14rpx;
+  left: -15rpx;
   font-size: 45rpx;
-  font-weight: 500;
   color: #000000;
   font-family: "苹方 常规";
 }

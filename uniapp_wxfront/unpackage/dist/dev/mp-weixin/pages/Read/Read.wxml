@@ -1,1 +1,1 @@
-<view></view>
+<view id="Read"><view class="body-md"><u-parse vue-id="29126300-1" content="{{content}}" data-event-opts="{{[['^navigate',[['navigate']]]]}}" bind:navigate="__e" bind:__l="__l"></u-parse></view></view>

@@ -10,9 +10,10 @@
 			<view class="input">
 				<input v-model="form.password" placeholder="请输入密码" type="password" />
 			</view>
-			<tui-button style="margin-top: 40rpx;" @click="Login">登录</tui-button>
+			<tui-button style="margin-top: 40rpx;width: 600rpx;" @click="Login">登录</tui-button>
 			<view class="register">
-				<text>没有账号？</text><text class="link-text" @click="Register">问mysql</text>
+				<text>没有账号？</text>
+				<text class="link-text" @click="Register">问mysql</text>
 			</view>
 			<view class="third-login">
 				<text>第三方装饰登录</text>
@@ -40,8 +41,8 @@
 			Login() {
 				this.$store.commit('userinfo', this.form.username)
 				this.$store.commit('passinfo', this.form.password)
-				console.log("vuex user:"+this.$store.state.userinfo.username)
-				console.log("vuex pass:"+this.$store.state.userinfo.password)
+				console.log("vuex user:" + this.$store.state.userinfo.username)
+				console.log("vuex pass:" + this.$store.state.userinfo.password)
 			},
 			Register() {
 				// uni.navigateTo({
