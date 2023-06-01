@@ -1,9 +1,6 @@
 {
 	"easycom": {
-		"autoscan": true,
-		"custom": {
-			"tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue"
-		}
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
 	},
 	"pages": [{
 			"path": "pages/Home/Home",
@@ -32,13 +29,21 @@
 				"enablePullDownRefresh": false
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/My/My",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人资料",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "",
 		"navigationBarBackgroundColor": "#ffffff",
 		"backgroundColor": "#F8F8F8",
-		"usingComponents": {},
 		"app-plus": {
 			"background": "#efeff4"
 		}
@@ -68,8 +73,10 @@
 				"text": "用户"
 			},
 			{
-				"pagePath": "pages/Read/Read",
-				"text": "阅读"
+				"pagePath": "pages/My/My",
+				"iconPath": "static/tabBar/用户 (2).png",
+				"selectedIconPath": "static/tabBar/用户 (2) (1).png",
+				"text": "用户2"
 			}
 		]
 	}

@@ -3,7 +3,8 @@
     "pages/Home/Home",
     "pages/Login/Login",
     "pages/Writing/Writing",
-    "pages/Read/Read"
+    "pages/Read/Read",
+    "pages/My/My"
   ],
   "subPackages": [],
   "window": {
@@ -38,8 +39,10 @@
         "text": "用户"
       },
       {
-        "pagePath": "pages/Read/Read",
-        "text": "阅读"
+        "pagePath": "pages/My/My",
+        "iconPath": "static/tabBar/用户 (2).png",
+        "selectedIconPath": "static/tabBar/用户 (2) (1).png",
+        "text": "用户2"
       }
     ]
   },

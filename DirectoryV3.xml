@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <trees>
     <tree path="/uniapp_wxfront/uni_modules" title="官方ui"/>
-    <tree path="/uniapp_wxfront/components" title="ThorUI"/>
+    <tree path="/uniapp_wxfront/components" title="插件" extension="" presentableText="" tooltipTitle="" icon=""
+          textColor="" backgroundColor=""/>
     <tree path="/uniapp_wxfront/static" title="资源"/>
     <tree path="/uniapp_wxfront/pages" title="页面"/>
     <tree path="/Springboot_backend/src/main/java/com/example/config" title="配置"/>
@@ -65,4 +66,5 @@
     <tree path="/uniapp_wxfront/manifest.json" title="高级配置"/>
     <tree path="/uniapp_wxfront/static/icons" title="图标集"/>
     <tree path="/uniapp_wxfront/static/tabBar" title="导航栏图标"/>
+    <tree path="/uniapp_wxfront/store" title="vuex"/>
 </trees>

@@ -3,6 +3,8 @@ import Vue from 'vue'
 import App from './App'
 import store from './store/index.js'
 Vue.prototype.$store = store
+import uView from '@/uni_modules/uview-ui'
+Vue.use(uView)
 
 Vue.config.productionTip = false
 

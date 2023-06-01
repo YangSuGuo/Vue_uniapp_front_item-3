@@ -16,11 +16,6 @@
             "autoclose" : true,
             "delay" : 0
         },
-		"safearea" : {
-				 "bottom" : {
-				      "offset" : "none"
-				 }
-			},
         "modules" : {},
         /* 模块配置 */
         "distribute" : {
@@ -64,7 +59,7 @@
     "vueVersion" : "2",
     "h5" : {
         "devServer" : {
-            "port" : 8008
+            "port" : 8090
         }
     }
 }

@@ -20,12 +20,10 @@
 </template>
 
 <script>
-	export default {
+  export default {
 		data() {
 			return {
-				// 后台模拟数据：http://localhost:8080/api/auth/essay/list?parameter=spring
-				// 文章正文：md格式【富文本解析】
-				// todo 连接后台
+				// 后台数据：http://localhost:8080/api/auth/essay/list?parameter=spring
 				items: []
 			}
 		},
@@ -34,9 +32,6 @@
 			 * 获取文章列表
 			 * @param parameter 文章分类
 			 * @return  json 卡片列表
-			 * todo vuex状态传参
-			 * todo 设置为vuex计算型
-			 * todo 请求传参错误
 			 */
 
 			// this.$store.commit('cardinfo',"spring")
@@ -53,7 +48,7 @@
 					parameter: card_parameter
 				},
 				success: res => {
-					console.log(res)
+					// console.log(res)
 					this.items = res.data
 				},
 				fail: err => {
@@ -69,9 +64,18 @@
 		methods: {
 			handleClick(index) {
 				console.log('点击了第' + (index + 1) + '篇文章')
+				this.$store.commit('aidinfo', this.items[index].aid)
+				this.$store.commit('titleinfo', this.items[index].title)
+				console.log("vuex aid:" + this.$store.state.card.aid)
+				console.log("vuex title:" + this.$store.state.card.title)
+				// todo 跳转至阅读Read
+				// let aid = this.items[index].aid;
+				// let title = this.items[index].title;
+				console.log(uni.$u.page())
+				uni.$u.route('/pages/Read/Read');
 			}
-		},
-	}
+      },
+  }
 </script>
 
 <style lang="scss">

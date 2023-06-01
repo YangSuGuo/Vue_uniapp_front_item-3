@@ -1,5 +1,5 @@
 
-#Login.data-v-3a2da0cc {
+.Login.data-v-3a2da0cc {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -12,7 +12,7 @@
 	background-color: rgba(242, 206, 43, 0.4);
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 10rpx;
-	padding: 5rpx;
+	padding: 1rpx;
 
 	margin-top: 10rpx;
 	margin-bottom: 50rpx;
@@ -39,7 +39,6 @@
 .input.data-v-3a2da0cc {
 	width: 100%;
 	padding: 20rpx 0;
-	border-bottom: 1rpx solid #ccc;
 }
 .register.data-v-3a2da0cc {
 	display: flex;

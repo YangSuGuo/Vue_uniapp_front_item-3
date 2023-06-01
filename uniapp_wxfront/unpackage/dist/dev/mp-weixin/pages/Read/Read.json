@@ -2,6 +2,6 @@
   "navigationBarTitleText": "阅读",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "u-parse": "/components/feng-parse/parse"
+    "mp-html": "/uni_modules/mp-html/components/mp-html/mp-html"
   }
 }
