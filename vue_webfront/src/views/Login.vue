@@ -98,7 +98,7 @@ export default {
                     this.$store.commit('userinfo', this.ruleForm.username)
                     this.$store.commit('passinfo', this.ruleForm.password)
 
-                    this.$router.push('/')
+                    this.$router.push('/summary')
 
                     this.$notify({
                         title: '欢迎你，我的主人',

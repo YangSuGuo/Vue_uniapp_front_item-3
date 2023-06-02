@@ -2,10 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 //主页面
 import Home from "@/components/Home.vue";
+//子页面
 import list from "@/views/home/list.vue";
 import login from "@/views/Login.vue";
-//子页面
 import Read from "@/views/home/Read.vue";
+import summary from "@/views/home/summary.vue";
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const router = new VueRouter({
                     name: 'login',
                     component: login
                 },
+                {
+                    path: 'summary',
+                    name: 'summary',
+                    component: summary
+                }
             ]
         },
         {

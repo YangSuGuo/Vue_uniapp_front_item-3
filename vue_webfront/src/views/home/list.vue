@@ -31,8 +31,8 @@
 // todo 添加卡片点击事件，点击后将aid发给后台返回文章正文【已解决】
 // todo 是否添加卡片点击动画 【css动画orJS动画orUI框架的自带动画】
 // todo 后台api，好像存在Spring Security鉴权问题token[已解决]
-// todo 阅读页面施工中。。。。。。90%
-// todo 登录界面施工中....50%
+// todo 阅读页面施工中。。。。。。90%  ok
+// todo 登录界面施工中....50%  ok
 import axios from "axios";
 
 export default {
@@ -75,19 +75,19 @@ export default {
 
     created() {
         // todo 报错找不到parameter[无影响]
-        axios.post('http://localhost:8080/api/auth/essay/list?', {
-           parameter: this.$store.state.card.parameter
-        }, {
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            withCredentials: true
-        }).then(res => {
-            this.items = res.data
-            // console.log("前端返回的res:", res)
-        }).catch(err => {
-            console.log("错误：" + err)
-        })
+      axios.post('http://localhost:8080/api/auth/essay/list?', {
+        parameter: this.$store.state.card.parameter
+      }, {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        withCredentials: true
+      }).then(res => {
+        this.items = res.data
+        // console.log("前端返回的res:", res)
+      }).catch(err => {
+        console.log("错误：" + err)
+      })
     },
 
 }

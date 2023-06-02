@@ -2,7 +2,7 @@
   <view class="Read">
     <view class="body-md">
       <!-- <u-parse :content="content" @navigate="navigate"></u-parse> -->
-	   <mp-html :content="content"/>
+	   <mp-html :content="content" class="md"/>
     </view>
   </view>
 </template>
@@ -64,5 +64,11 @@ export default {
   padding: 20rpx;
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.md{
+  font-family: "PingFang SC";
+  line-height: 1.5;
+  letter-spacing: 0.4rpx;
+  //word-spacing: 1rpx;
 }
 </style>

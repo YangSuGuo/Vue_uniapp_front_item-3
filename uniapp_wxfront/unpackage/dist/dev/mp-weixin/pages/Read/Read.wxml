@@ -1,1 +1,1 @@
-<view class="Read"><view class="body-md"><mp-html vue-id="29126300-1" content="{{content}}" bind:__l="__l"></mp-html></view></view>
+<view class="Read"><view class="body-md"><mp-html class="md" vue-id="29126300-1" content="{{content}}" bind:__l="__l"></mp-html></view></view>

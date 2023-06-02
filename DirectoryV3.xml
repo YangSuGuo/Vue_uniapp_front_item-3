@@ -67,4 +67,5 @@
     <tree path="/uniapp_wxfront/static/icons" title="图标集"/>
     <tree path="/uniapp_wxfront/static/tabBar" title="导航栏图标"/>
     <tree path="/uniapp_wxfront/store" title="vuex"/>
+    <tree path="/vue_webfront/src/views/home/summary.vue" title="数据"/>
 </trees>
