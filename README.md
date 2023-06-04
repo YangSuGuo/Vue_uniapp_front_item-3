@@ -4,7 +4,6 @@
 **uniapp** 小程序前端
 
 
-## 需求：
 
 ### uniapp web双平台
 
