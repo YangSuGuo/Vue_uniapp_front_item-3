@@ -181,13 +181,10 @@ var _default = {
     var card_parameter = this.$store.state.card.parameter;
     console.log(card_parameter);
     uni.request({
-      url: 'http://localhost:8080/api/auth/essay/list',
-      method: 'POST',
+      url: 'http://localhost:8080/api/auth/essay/alllist',
+      method: 'GET',
       header: {
         'content-type': 'application/x-www-form-urlencoded'
-      },
-      data: {
-        parameter: card_parameter
       },
       success: function success(res) {
         // console.log(res)
@@ -197,7 +194,26 @@ var _default = {
         console.log(err);
       }
     });
+
+    // uni.request({
+    // 	url: 'http://localhost:8080/api/auth/essay/list',
+    // 	method: 'POST',
+    // 	header: {
+    // 		'content-type': 'application/x-www-form-urlencoded'
+    // 	},
+    // 	data: {
+    // 		parameter: card_parameter
+    // 	},
+    // 	success: res => {
+    // 		// console.log(res)
+    // 		this.items = res.data
+    // 	},
+    // 	fail: err => {
+    // 		console.log(err)
+    // 	}
+    // })
   },
+
   computed: {
     card: function card() {
       return this.items[0];
