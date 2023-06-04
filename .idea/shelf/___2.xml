@@ -1,0 +1,9 @@
+<changelist name="在变基之前未提交的更改_[更改]2" date="1685870618427" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]2/shelved.patch" />
+  <option name="DESCRIPTION" value="在变基之前未提交的更改 [更改]" />
+  <binary>
+    <option name="BEFORE_PATH" value="uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/mp-html/components/mp-html/node/node.wxss" />
+    <option name="AFTER_PATH" value="uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/mp-html/components/mp-html/node/node.wxss" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]2/node.wxss" />
+  </binary>
+</changelist>
