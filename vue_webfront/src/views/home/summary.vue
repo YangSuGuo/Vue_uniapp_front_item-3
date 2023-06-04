@@ -2,8 +2,10 @@
   <el-table
       :data="tableData"
       class="table"
+      max-height="620"
+      show-summary
       stripe
-      style="width: 100%">
+      style="width: 100%;">
     <el-table-column
         label="ID"
         prop="aid"
@@ -35,7 +37,8 @@
         <el-button
             size="mini"
             type="danger"
-            @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+            @click="handleDelete(scope.$index, scope.row)">删除
+        </el-button>
       </template>
     </el-table-column>
   </el-table>
@@ -53,6 +56,42 @@ export default {
   methods: {
     handleDelete(index, row) {
       console.log(index, row);
+      const aid = row.aid;
+      axios.post('http://localhost:8080/api/auth/essay/deletelist', {
+        aid: aid
+      }, {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        // withCredentials: true
+      }).then(res => {
+        this.$notify({
+          title: 'No！你这个该死的混蛋，看看你做了什么',
+          duration: 1000,
+          message: this.$createElement('i', {style: 'color: teal'}),
+          type: 'success',
+          position: 'top-right',
+        });
+        axios.get('http://localhost:8080/api/auth/essay/alllist', {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          withCredentials: true
+        }).then(res => {
+          this.tableData = res.data
+          // console.log("前端返回的res:", res)
+        }).catch(err => {
+          console.log("错误：" + err)
+        });
+      }).catch(err => {
+        this.$notify.error({
+          title: '瞧瞧我刚刚保护了什么！',
+          duration: 1000,
+          message: this.$createElement('i', {style: 'color: teal'}),
+          position: 'top-right',
+        });
+        console.log("错误：" + err)
+      })
     }
   },
   created() {

@@ -4,70 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84eb48dc-66ac-4043-baa5-8a35521768ff" name="更改" comment="尝试">
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/我的11 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/我的11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/知识库08 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/知识库08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/编辑 (5) (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/编辑 (5) (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/编辑 (5) (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/tabBar/编辑 (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/project.private.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/我的11 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/我的11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/知识库08 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/知识库08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/编辑 (5) (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/编辑 (5) (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/编辑 (5) (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/tabBar/编辑 (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_webfront/src/views/home/summary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JavaSceneConfigState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JavaSceneConfigState.xml" afterDir="false" />
+    <list default="true" id="84eb48dc-66ac-4043-baa5-8a35521768ff" name="更改" comment="添加删除，all接口。vue数据页面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirectoryV3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DirectoryV3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/controller/AuthorizeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/controller/AuthorizeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/mapper/usermapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/mapper/usermapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/service/AuthorizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/service/AuthorizeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/service/impl/AuthorizeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/service/impl/AuthorizeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/controller/AuthorizeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/controller/AuthorizeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/mapper/usermapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/mapper/usermapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/service/AuthorizeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/service/AuthorizeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/service/impl/AuthorizeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/service/impl/AuthorizeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/pages/Home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/pages/Home/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/pages/Read/Read.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/pages/Read/Read.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Home/Home.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Home/Home.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Login/Login.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Login/Login.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Read/Read.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/pages/Read/Read.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/mp-html/components/mp-html/mp-html.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/mp-html/components/mp-html/mp-html.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/mp-html/components/mp-html/node/node.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/mp-html/components/mp-html/node/node.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-button/u-button.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-button/u-button.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-icon/u-icon.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-icon/u-icon.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-input/u-input.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-input/u-input.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Read.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Read.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Read.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Read.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u--form/u--form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u--form/u--form.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u--form/u--form.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-button/u-button.json" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-button/u-button.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-form-item/u-form-item.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-form-item/u-form-item.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-form-item/u-form-item.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-form-item/u-form-item.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-form/u-form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-form/u-form.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-form/u-form.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-icon/u-icon.json" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-icon/u-icon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-line/u-line.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-line/u-line.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-line/u-line.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-line/u-line.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_webfront/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue_webfront/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_webfront/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_webfront/src/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_webfront/src/views/home/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_webfront/src/views/home/list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_webfront/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_webfront/src/components/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,16 +26,36 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/Springboot_backend" source="ysg" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_COMMON_BRANCH" value="master" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Springboot_backend" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$/Springboot_backend" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_COMMON_BRANCH" value="ysg" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -136,9 +95,9 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ysg&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;Android Studio default JDK&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/static/tabBar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/文档/HTML文件/Learn/Vue_Uniapp_Item_3&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -158,7 +117,9 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ],
     &quot;DatabaseDriversLRU&quot;: [
       &quot;mysql&quot;
@@ -170,11 +131,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\uniapp_wxfront\pages\Writing" />
+      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\uniapp_wxfront\static" />
       <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\uniapp_wxfront\static\tabBar" />
       <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\uniapp_wxfront" />
       <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\uniapp_wxfront\static\icons" />
-      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\vue_webfront\public" />
-      <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\vue_webfront\src\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\文档\Uni_app\Vue_Uniapp_Item_3\vue_webfront\src\assets\scss\css" />
@@ -188,7 +149,10 @@
       <recent name="com.example.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootBackendApplication">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="generated-requests中的所有" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
     <configuration name="SpringbootBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Springboot_backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringbootBackendApplication" />
@@ -207,9 +171,17 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="HTTP 请求.generated-requests中的所有" />
       <item itemvalue="npm.dev" />
       <item itemvalue="Spring Boot.SpringbootBackendApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP 请求.generated-requests中的所有" />
+        <item itemvalue="HTTP 请求.generated-requests中的所有" />
+        <item itemvalue="HTTP 请求.generated-requests中的所有" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -336,7 +308,14 @@
       <workItem from="1685712626007" duration="803000" />
       <workItem from="1685714073092" duration="1784000" />
       <workItem from="1685715877426" duration="2817000" />
-      <workItem from="1685719041341" duration="5325000" />
+      <workItem from="1685719041341" duration="5483000" />
+      <workItem from="1685759208321" duration="4288000" />
+      <workItem from="1685766025606" duration="5517000" />
+      <workItem from="1685780762848" duration="1135000" />
+      <workItem from="1685790622452" duration="3051000" />
+      <workItem from="1685849159228" duration="6604000" />
+      <workItem from="1685865672055" duration="1274000" />
+      <workItem from="1685867105115" duration="3781000" />
     </task>
     <task id="LOCAL-00001" summary="开始">
       <created>1683186865946</created>
@@ -492,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685696938168</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="添加删除，all接口。vue数据页面">
+      <created>1685725894354</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1685725894354</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +508,28 @@
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="ysg" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
                 </option>
               </RecentGroup>
             </list>
@@ -590,7 +597,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="ysg" />
                       </list>
                     </value>
                   </entry>
@@ -603,6 +610,12 @@
                     </value>
                   </entry>
                 </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="MATCH_CASE" value="true" />
+                  <option name="REGEX" value="true" />
+                </TextFilterSettings>
               </option>
             </State>
           </value>
@@ -629,7 +642,8 @@
     <MESSAGE value="uniapp 阅读界面初步完成，差相关逻辑" />
     <MESSAGE value="首页，阅读，登录完成。优化代码结构" />
     <MESSAGE value="尝试" />
-    <option name="LAST_COMMIT_MESSAGE" value="尝试" />
+    <MESSAGE value="添加删除，all接口。vue数据页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加删除，all接口。vue数据页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
