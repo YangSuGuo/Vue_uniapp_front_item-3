@@ -1,1 +1,1 @@
-<view>我的</view>
+<view class="My"><view class="head"><view class="detail"></view></view><view class="main"></view><view class="bottom"></view></view>

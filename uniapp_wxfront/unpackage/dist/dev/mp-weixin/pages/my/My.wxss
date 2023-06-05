@@ -1,35 +1,6 @@
-<template>
-	<view class="My">
-		<view class="head">
-			<view class="detail">
 
-			</view>
-		</view>
-
-
-		<view class="main">
-
-		</view>
-		<view class="bottom">
-
-		</view>
-	</view>
-
-</template>
-
-<script>
-	export default {
-		data() {
-			return {}
-		},
-		methods: {}
-	}
-</script>
-
-<style>
-	.My {}
-
-	.head {
+.My {}
+.head {
 		height: 35vh;
 		background-color: #3c9cff;
 		border-bottom-left-radius: 100rpx;
@@ -43,32 +14,29 @@
 		/* 垂直居中 */
 		flex-direction: column;
 		/* 垂直排列 */
-	}
-
-	.detail {
-		//padding: 40rpx;
+}
+.detail {
+		/*padding: 40rpx; */
 		width: 80%;
 		height: 300rpx;
 		background-color: #6a737d;
 		border-radius: 40rpx;
     z-index: 50;
-	}
-
-	.main {
+}
+.main {
 		width: 90%;
 		height: 200rpx;
 		margin: 0 auto;
 		margin-top: -100rpx;
 		background-color: #7ec69980;
 		border-radius: 40rpx;
-		//border-top-left-radius: 80rpx; //border-top-right-radius: 80rpx; z-index: -1;
-	}
-
-	.bottom {
+		/*border-top-left-radius: 80rpx; //border-top-right-radius: 80rpx; z-index: -1; */
+}
+.bottom {
 		height: 100vh;
 		width: 90%;
 		background-color: #9acafc;
 		margin: 20rpx auto;
 		border-radius: 40rpx;
-	}
-</style>
+}
+

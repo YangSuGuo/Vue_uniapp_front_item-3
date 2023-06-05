@@ -101,7 +101,7 @@ var components
 try {
   components = {
     mpHtml: function () {
-      return Promise.all(/*! import() | components/mp-html/mp-html */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/mp-html/mp-html")]).then(__webpack_require__.bind(null, /*! @/components/mp-html/mp-html.vue */ 216))
+      return Promise.all(/*! import() | components/mp-html/mp-html */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/mp-html/mp-html")]).then(__webpack_require__.bind(null, /*! @/components/mp-html/mp-html.vue */ 218))
     },
   }
 } catch (e) {
@@ -173,7 +173,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 var mpHtml = function mpHtml() {
   Promise.all(/*! require.ensure | components/mp-html/mp-html */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/mp-html/mp-html")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/mp-html/mp-html */ 216));
+    return resolve(__webpack_require__(/*! @/components/mp-html/mp-html */ 218));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 // 上传图片方法

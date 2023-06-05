@@ -1556,7 +1556,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -8913,7 +8913,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8934,14 +8934,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9037,7 +9037,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"uniapp_wxfront","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -21890,7 +21890,9 @@ exports.default = _default;
 /* 202 */,
 /* 203 */,
 /* 204 */,
-/* 205 */
+/* 205 */,
+/* 206 */,
+/* 207 */
 /*!*******************************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/uni_modules/uview-ui/components/u-input/props.js ***!
   \*******************************************************************************************************/
@@ -22095,12 +22097,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 206 */,
-/* 207 */,
 /* 208 */,
 /* 209 */,
 /* 210 */,
-/* 211 */
+/* 211 */,
+/* 212 */,
+/* 213 */
 /*!************************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/uni_modules/uview-ui/libs/mixin/button.js ***!
   \************************************************************************************************/
@@ -22130,7 +22132,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 212 */
+/* 214 */
 /*!**************************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/uni_modules/uview-ui/libs/mixin/openType.js ***!
   \**************************************************************************************************/
@@ -22172,7 +22174,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 213 */
+/* 215 */
 /*!********************************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/uni_modules/uview-ui/components/u-button/props.js ***!
   \********************************************************************************************************/
@@ -22351,14 +22353,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 214 */,
-/* 215 */,
 /* 216 */,
 /* 217 */,
 /* 218 */,
 /* 219 */,
 /* 220 */,
-/* 221 */
+/* 221 */,
+/* 222 */,
+/* 223 */
 /*!***********************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/parser.js ***!
   \***********************************************************************************/
@@ -23578,7 +23580,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
 
 /***/ }),
-/* 222 */
+/* 224 */
 /*!*******************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/markdown/index.js ***!
   \*******************************************************************************************/
@@ -23593,7 +23595,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 223));
+var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 225));
 /**
  * @fileoverview markdown 插件
  * Include marked (https://github.com/markedjs/marked)
@@ -23627,7 +23629,7 @@ var _default = Markdown;
 exports.default = _default;
 
 /***/ }),
-/* 223 */
+/* 225 */
 /*!************************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/markdown/marked.min.js ***!
   \************************************************************************************************/
@@ -24754,7 +24756,7 @@ var _default = t();
 exports.default = _default;
 
 /***/ }),
-/* 224 */
+/* 226 */
 /*!****************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/audio/index.js ***!
   \****************************************************************************************/
@@ -24769,7 +24771,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 225));
+var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 227));
 /**
  * @fileoverview audio 插件
  */
@@ -24803,7 +24805,7 @@ var _default = Audio;
 exports.default = _default;
 
 /***/ }),
-/* 225 */
+/* 227 */
 /*!******************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/audio/context.js ***!
   \******************************************************************************************/
@@ -24832,7 +24834,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 226 */
+/* 228 */
 /*!****************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/emoji/index.js ***!
   \****************************************************************************************/
@@ -25046,7 +25048,7 @@ var _default = Emoji;
 exports.default = _default;
 
 /***/ }),
-/* 227 */
+/* 229 */
 /*!********************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/highlight/index.js ***!
   \********************************************************************************************/
@@ -25061,9 +25063,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 228));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 229));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 221));
+var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 230));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 231));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 223));
 /**
  * @fileoverview highlight 插件
  * Include prismjs (https://prismjs.com)
@@ -25159,7 +25161,7 @@ var _default = Highlight;
 exports.default = _default;
 
 /***/ }),
-/* 228 */
+/* 230 */
 /*!************************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/highlight/prism.min.js ***!
   \************************************************************************************************/
@@ -25762,7 +25764,7 @@ Prism.languages.javascript = Prism.languages.extend("clike", {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! (webpack)/buildin/global.js */ 3)))
 
 /***/ }),
-/* 229 */
+/* 231 */
 /*!*********************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/highlight/config.js ***!
   \*********************************************************************************************/
@@ -25786,7 +25788,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 230 */
+/* 232 */
 /*!****************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/latex/index.js ***!
   \****************************************************************************************/
@@ -25801,7 +25803,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _katex = _interopRequireDefault(__webpack_require__(/*! ./katex.min */ 231));
+var _katex = _interopRequireDefault(__webpack_require__(/*! ./katex.min */ 233));
 /**
  * @fileoverview latex 插件
  * katex.min.js来源 https://github.com/rojer95/katex-mini
@@ -25838,7 +25840,7 @@ var _default = Latex;
 exports.default = _default;
 
 /***/ }),
-/* 231 */
+/* 233 */
 /*!********************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/latex/katex.min.js ***!
   \********************************************************************************************/
@@ -35487,7 +35489,7 @@ var _default2 = t();
 exports.default = _default2;
 
 /***/ }),
-/* 232 */
+/* 234 */
 /*!****************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/style/index.js ***!
   \****************************************************************************************/
@@ -35502,7 +35504,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 233));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 235));
 /**
  * @fileoverview style 插件
  */
@@ -35631,7 +35633,7 @@ var _default = Style;
 exports.default = _default;
 
 /***/ }),
-/* 233 */
+/* 235 */
 /*!*****************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/style/parser.js ***!
   \*****************************************************************************************/
@@ -35817,7 +35819,7 @@ var _default = Parser;
 exports.default = _default;
 
 /***/ }),
-/* 234 */
+/* 236 */
 /*!********************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/img-cache/index.js ***!
   \********************************************************************************************/
@@ -35909,7 +35911,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 235 */
+/* 237 */
 /*!*******************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/editable/index.js ***!
   \*******************************************************************************************/
@@ -35924,8 +35926,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 236));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 221));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 238));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 223));
 /**
  * @fileoverview editable 插件
  */
@@ -36478,7 +36480,7 @@ var _default = Editable;
 exports.default = _default;
 
 /***/ }),
-/* 236 */
+/* 238 */
 /*!********************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/components/mp-html/editable/config.js ***!
   \********************************************************************************************/
@@ -36508,8 +36510,6 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 237 */,
-/* 238 */,
 /* 239 */,
 /* 240 */,
 /* 241 */,
@@ -36522,7 +36522,9 @@ exports.default = _default;
 /* 248 */,
 /* 249 */,
 /* 250 */,
-/* 251 */
+/* 251 */,
+/* 252 */,
+/* 253 */
 /*!**************************************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
   \**************************************************************************************************************/
@@ -36599,14 +36601,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 252 */,
-/* 253 */,
 /* 254 */,
 /* 255 */,
 /* 256 */,
 /* 257 */,
 /* 258 */,
-/* 259 */
+/* 259 */,
+/* 260 */,
+/* 261 */
 /*!******************************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/uni_modules/uview-ui/components/u-icon/icons.js ***!
   \******************************************************************************************************/
@@ -36837,7 +36839,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 260 */
+/* 262 */
 /*!******************************************************************************************************!*\
   !*** F:/文档/Uni_app/Vue_Uniapp_Item_3/uniapp_wxfront/uni_modules/uview-ui/components/u-icon/props.js ***!
   \******************************************************************************************************/
