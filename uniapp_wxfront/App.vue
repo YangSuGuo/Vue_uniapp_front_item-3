@@ -23,7 +23,9 @@
 	page {
 		background-color: #f5f5f5;
 	}
-
+  .uni-bar {
+    background-color: linear-gradient(to right, #3388ff, #00cccc);
+  }
 	/* #endif */
 	.example-info {
 		font-size: 14px;

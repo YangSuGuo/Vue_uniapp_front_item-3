@@ -71,6 +71,7 @@ export default {
           type: 'success',
           position: 'top-right',
         });
+        this.$router.push("summary");
       } else {
         this.$router.push("login");
       }

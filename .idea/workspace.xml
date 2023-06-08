@@ -4,20 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84eb48dc-66ac-4043-baa5-8a35521768ff" name="更改" comment="修正">
-      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/my/My.wxss" afterDir="false" />
+    <list default="true" id="84eb48dc-66ac-4043-baa5-8a35521768ff" name="更改" comment="完善浏览量接口">
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/static/043 New York.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u--text/u--text.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-avatar/u-avatar.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-image/u-image.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-link/u-link.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-text/u-text.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-transition/u-transition.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/static/043 New York.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/common/uni.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/backbutton-badge/badge.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/backbutton-title/title.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/backbutton/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/background/background.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/blur/blur.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/buttons-badge/badge.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/buttons-multi/multi.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/buttons-select/select.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/buttons-text/text.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/buttons-type/type.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/buttons/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/index/index.nvue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/search-focus/focus.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/search-input/input.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/search/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/splitline/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/title-icon/icon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/title-mix/mix.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/title-sub/sub.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/title/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/type-float/float.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/pages/type-transparent/transparent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/static/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/static/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/static/icon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/static/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/static/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导航栏示例应用/static/uni.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/controller/AuthorizeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/controller/AuthorizeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Springboot_backend" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/mapper/usermapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/mapper/usermapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/service/AuthorizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/service/AuthorizeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/service/impl/AuthorizeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/src/main/java/com/example/service/impl/AuthorizeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/controller/AuthorizeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/controller/AuthorizeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/mapper/usermapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/mapper/usermapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/service/AuthorizeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/service/AuthorizeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/service/impl/AuthorizeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Springboot_backend/target/classes/com/example/service/impl/AuthorizeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/pages/Home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/pages/Home/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/pages/My/My.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/pages/My/My.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/vendor.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/components/mp-html/audio/audio.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/components/mp-html/audio/audio.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/components/mp-html/mp-html.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/components/mp-html/mp-html.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/components/mp-html/node/node.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/components/mp-html/node/node.js.map" afterDir="false" />
@@ -30,20 +72,18 @@
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-icon/u-icon.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-icon/u-icon.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-input/u-input.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-input/u-input.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/.sourcemap/mp-weixin/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/main.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/main.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/runtime.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/common/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/components/mp-html/audio/audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/components/mp-html/audio/audio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/components/mp-html/mp-html.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/components/mp-html/mp-html.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/components/mp-html/node/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/components/mp-html/node/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Read.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Read/Read.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing/Writing.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Writing/Writing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Home/Home.json" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Home/Home.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Home/Home.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/Home/Home.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/my/My.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/my/My.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/my/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/my/my.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/my/my.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/pages/my/my.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u--input/u--input.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u--input/u--input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-button/u-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-button/u-button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-icon/u-icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-icon/u-icon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-input/u-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-input/u-input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/project.private.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/project.private.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-button/u-button.json" beforeDir="false" afterPath="$PROJECT_DIR$/uniapp_wxfront/unpackage/dist/dev/mp-weixin/uni_modules/uview-ui/components/u-button/u-button.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_webfront/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_webfront/src/components/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +129,7 @@
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="ysg" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Springboot_backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -357,7 +397,19 @@
       <workItem from="1685927206765" duration="3510000" />
       <workItem from="1685949240027" duration="4909000" />
       <workItem from="1685965484619" duration="347000" />
-      <workItem from="1685969835127" duration="2661000" />
+      <workItem from="1685969835127" duration="3058000" />
+      <workItem from="1685972906124" duration="560000" />
+      <workItem from="1685983926778" duration="163000" />
+      <workItem from="1686012248408" duration="1934000" />
+      <workItem from="1686016359474" duration="5157000" />
+      <workItem from="1686024664594" duration="156000" />
+      <workItem from="1686025088614" duration="1315000" />
+      <workItem from="1686036020455" duration="1060000" />
+      <workItem from="1686100865784" duration="42000" />
+      <workItem from="1686119643155" duration="17067000" />
+      <workItem from="1686138114424" duration="1647000" />
+      <workItem from="1686194079518" duration="9953000" />
+      <workItem from="1686209760932" duration="4642000" />
     </task>
     <task id="LOCAL-00001" summary="开始">
       <created>1683186865946</created>
@@ -534,7 +586,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685875763308</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="完善浏览量接口">
+      <created>1685972575838</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1685972575838</updated>
+    </task>
+    <task id="LOCAL-00027" summary="完善浏览量接口">
+      <created>1685972680169</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1685972680169</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,7 +758,8 @@
     <MESSAGE value="尝试" />
     <MESSAGE value="添加删除，all接口。vue数据页面" />
     <MESSAGE value="修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正" />
+    <MESSAGE value="完善浏览量接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善浏览量接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

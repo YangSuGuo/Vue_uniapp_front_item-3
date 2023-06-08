@@ -94,7 +94,7 @@
 
 <style lang="scss">
 	.list {
-		margin-top: 50rpx;
+		margin-top: 60rpx;
 		margin-left: 25rpx;
 		margin-right: 25rpx;
 	}
