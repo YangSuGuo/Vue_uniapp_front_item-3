@@ -6,9 +6,10 @@
 					<image :src="user.photo" class="photo">
 					</image>
 					<view class="userinfo">
-						<text class="name">{{ user.Username }}</text>
-						<text class="biography">{{user.Biography}}</text>
-						<view class="introduction">
+						<text class="name">{{ user.nickname }}</text>
+						<text class="biography">年龄:{{ user.age }}</text>
+						<text class="biography">{{user.introduction}}</text>
+						<view class="introduction" @click="introduction">
 							<view class="flag">
 								<view class="text"><u-icon class="icon" color="#FFF" name="account"
 										size="60rpx"></u-icon></view>
@@ -18,8 +19,8 @@
 				</view>
 			</view>
 			<view class="main">
-				<view>1</view>
-				<view>2</view>
+				<view>{{ TotalViews }}</view>
+				<view @click="Page()">排行榜</view>
 				<view>3</view>
 				<view>4</view>
 			</view>
@@ -63,37 +64,82 @@
 	export default {
 		data() {
 			return {
-				user: {
-					photo: "https://img1.imgtp.com/2023/06/06/W0xQ9dw2.png",
-					Username: "楊蘇國",
-					Biography: "一个饱食终日的人。"
-				},
-				items: []
+				user: [],
+				items: [],
+				TotalViews: null
 			}
 		},
 		onLoad() {
-			/**
-			 * 获取文章列表
-			 * @param parameter 文章分类
-			 * @return  json 卡片列表
-			 */
-			// todo 参数可变！！【vuex】
-			uni.request({
-				url: 'http://localhost:8080/api/auth/essay/list',
-				method: 'POST',
-				header: {
-					'content-type': 'application/x-www-form-urlencoded'
-				},
-				data: {
-					parameter: "YSG"
-				},
-				success: res => {
-					this.items = res.data
-				},
-				fail: err => {
-					console.log(err)
-				}
-			})
+			if (this.$store.state.userinfo.username == null || this.$store.state.userinfo.password == null) {
+				uni.redirectTo({
+					url: '/pages/Login/Login'
+				})
+			} else {
+				/**
+				 * 获取文章列表
+				 * @param parameter(String) 文章分类
+				 * @return  json 卡片列表
+				 */
+				uni.request({
+					url: 'http://localhost:8080/api/auth/essay/list',
+					method: 'POST',
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					data: {
+						parameter: this.$store.state.userinfo.username
+					},
+					success: res => {
+						// 冒泡排序（按浏览量进行排序）
+						let top = res.data
+						console.log("开始排序")
+						let time = new Date().getTime();
+						let TotalViews = 0;
+						console.log(top)
+						for (let i = 0; i < top.length; i++) { // 负责top【i】的遍历
+							for (let j = i + 1; j < top.length; j++) { // 负责top【i+1】的遍历
+								console.log(top[i].aid);
+								console.log(top[j].aid);
+								if (top[i].pageview <= top[j].pageview) { // 准备临时变量当中间值，来交换位置
+									let t = top[i]
+									top[i] = top[j]
+									top[j] = t
+								}
+							}
+							TotalViews += top[i].pageview
+						}
+						console.log("完成耗时：" + (new Date().getTime() - time) + "ms")
+						console.log("页面总浏览量：" + TotalViews);
+						console.log(top)
+						this.items = top
+						this.TotalViews = TotalViews;
+					},
+					fail: err => {
+						console.log(err)
+					}
+				})
+				/**
+				 * 获取用户信息
+				 * @param user(String) 登录用户名
+				 * @return  json 用户信息
+				 */
+				uni.request({
+					url: 'http://localhost:8080/api/auth/UserInformation',
+					method: 'POST',
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					data: {
+						user: this.$store.state.userinfo.username
+					},
+					success: res => {
+						this.user = res.data
+					},
+					fail: err => {
+						console.log(err)
+					}
+				})
+			}
 		},
 		computed: {
 			card() {
@@ -107,7 +153,13 @@
 				this.$store.commit('titleinfo', this.items[index].title)
 				console.log(uni.$u.page())
 				uni.$u.route('/pages/Read/Read');
-			}
+			},
+			introduction() {
+				uni.$u.route('/pages/Resume/Resume');
+			},
+      Page(){
+        uni.$u.route('/pages/Ranking/Ranking');
+      }
 		},
 	}
 </script>
@@ -118,7 +170,8 @@
 	.head {
 		height: 520rpx;
 		border-radius: 0 0 60rpx 60rpx;
-		box-shadow: 0px -2px 10px 0px inset #EDEDED, 0px 2px 6px 0px inset #6a737d;
+		box-shadow: inset 0px -2px 10px 0px #EDEDED,
+			inset 0px 2px 6px 0px #6a737d;
 	}
 
 	.detail {
@@ -207,8 +260,8 @@
 		width: 90%;
 		height: 180rpx;
 		margin: 40rpx auto;
-		background-color: #7ec69980;
-		border-radius: 20px 20px 20px 20px;
+		background-color: rgba(126, 198, 153, 0.5);
+		border-radius: 20px;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;

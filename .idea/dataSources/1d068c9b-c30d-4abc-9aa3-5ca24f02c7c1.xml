@@ -1500,7 +1500,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="399" parent="310" name="aid">
-      <AutoIncrement>12</AutoIncrement>
+      <AutoIncrement>29</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1609,7 +1609,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </column>
     <column id="420" parent="311" name="birthday">
       <Comment>生日</Comment>
-      <DasType>int|0s</DasType>
+      <DasType>varchar(50)|0s</DasType>
       <Position>10</Position>
     </column>
     <column id="421" parent="311" name="address">
@@ -1634,15 +1634,20 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </column>
     <column id="425" parent="311" name="Registrationtime">
       <Comment>注册时间</Comment>
-      <DasType>int|0s</DasType>
+      <DasType>varchar(50)|0s</DasType>
       <Position>15</Position>
     </column>
-    <index id="426" parent="311" name="PRIMARY">
+    <column id="426" parent="311" name="gender">
+      <Comment>性别</Comment>
+      <DasType>varchar(10)|0s</DasType>
+      <Position>16</Position>
+    </column>
+    <index id="427" parent="311" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="427" parent="311" name="PRIMARY">
+    <key id="428" parent="311" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

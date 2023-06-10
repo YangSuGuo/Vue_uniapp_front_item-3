@@ -12,7 +12,7 @@ export default new Vuex.Store({
         card: {
             aid: null,
             title: null,
-            parameter: "spring"
+            parameter: "ALL"
         }
     },
     getters: {},

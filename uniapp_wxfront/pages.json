@@ -1,7 +1,4 @@
 {
-	"easycom": {
-		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
-	},
 	"pages": [{
 			"path": "pages/Home/Home",
 			"style": {
@@ -36,6 +33,20 @@
 				"enablePullDownRefresh": false
 			}
 
+		}, {
+			"path": "pages/Resume/Resume",
+			"style": {
+				"navigationBarTitleText": "个人简历",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/Ranking/Ranking",
+			"style": {
+				"navigationBarTitleText": "排行榜",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	],
 	"globalStyle": {
@@ -66,16 +77,10 @@
 				"text": "写作"
 			},
 			{
-				"pagePath": "pages/Login/Login",
-				"iconPath": "static/tabBar/用户 (2).png",
-				"selectedIconPath": "static/tabBar/用户 (2) (1).png",
-				"text": "用户"
-			},
-			{
 				"pagePath": "pages/My/My",
 				"iconPath": "static/tabBar/用户 (2).png",
 				"selectedIconPath": "static/tabBar/用户 (2) (1).png",
-				"text": "用户2"
+				"text": "用户"
 			}
 		]
 	}

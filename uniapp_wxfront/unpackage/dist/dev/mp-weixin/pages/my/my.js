@@ -101,10 +101,10 @@ var components
 try {
   components = {
     uIcon: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-icon/u-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-icon/u-icon")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-icon/u-icon.vue */ 256))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-icon/u-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-icon/u-icon")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-icon/u-icon.vue */ 273))
     },
     uButton: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 208))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 234))
     },
   }
 } catch (e) {
@@ -223,6 +223,7 @@ exports.default = void 0;
 //
 //
 //
+//
 // todo 关于登录与个人管理的逻辑，在个人资料里检查vuex是否为空，空就跳转登录
 // todo 可选：加入持久化！！
 // todo 个人简介页面
@@ -231,38 +232,86 @@ exports.default = void 0;
 var _default = {
   data: function data() {
     return {
-      user: {
-        photo: "https://img1.imgtp.com/2023/06/06/W0xQ9dw2.png",
-        Username: "楊蘇國",
-        Biography: "一个饱食终日的人。"
-      },
-      items: []
+      user: [],
+      items: [],
+      TotalViews: null
     };
   },
   onLoad: function onLoad() {
     var _this = this;
-    /**
-     * 获取文章列表
-     * @param parameter 文章分类
-     * @return  json 卡片列表
-     */
-    // todo 参数可变！！【vuex】
-    uni.request({
-      url: 'http://localhost:8080/api/auth/essay/list',
-      method: 'POST',
-      header: {
-        'content-type': 'application/x-www-form-urlencoded'
-      },
-      data: {
-        parameter: "YSG"
-      },
-      success: function success(res) {
-        _this.items = res.data;
-      },
-      fail: function fail(err) {
-        console.log(err);
-      }
-    });
+    if (this.$store.state.userinfo.username == null || this.$store.state.userinfo.password == null) {
+      uni.redirectTo({
+        url: '/pages/Login/Login'
+      });
+    } else {
+      /**
+       * 获取文章列表
+       * @param parameter(String) 文章分类
+       * @return  json 卡片列表
+       */
+      uni.request({
+        url: 'http://localhost:8080/api/auth/essay/list',
+        method: 'POST',
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        data: {
+          parameter: this.$store.state.userinfo.username
+        },
+        success: function success(res) {
+          // 冒泡排序（按浏览量进行排序）
+          var top = res.data;
+          console.log("开始排序");
+          var time = new Date().getTime();
+          var TotalViews = 0;
+          console.log(top);
+          for (var i = 0; i < top.length; i++) {
+            // 负责top【i】的遍历
+            for (var j = i + 1; j < top.length; j++) {
+              // 负责top【i+1】的遍历
+              console.log(top[i].aid);
+              console.log(top[j].aid);
+              if (top[i].pageview <= top[j].pageview) {
+                // 准备临时变量当中间值，来交换位置
+                var t = top[i];
+                top[i] = top[j];
+                top[j] = t;
+              }
+            }
+            TotalViews += top[i].pageview;
+          }
+          console.log("完成耗时：" + (new Date().getTime() - time) + "ms");
+          console.log("页面总浏览量：" + TotalViews);
+          console.log(top);
+          _this.items = top;
+          _this.TotalViews = TotalViews;
+        },
+        fail: function fail(err) {
+          console.log(err);
+        }
+      });
+      /**
+       * 获取用户信息
+       * @param user(String) 登录用户名
+       * @return  json 用户信息
+       */
+      uni.request({
+        url: 'http://localhost:8080/api/auth/UserInformation',
+        method: 'POST',
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        data: {
+          user: this.$store.state.userinfo.username
+        },
+        success: function success(res) {
+          _this.user = res.data;
+        },
+        fail: function fail(err) {
+          console.log(err);
+        }
+      });
+    }
   },
   computed: {
     card: function card() {
@@ -276,6 +325,12 @@ var _default = {
       this.$store.commit('titleinfo', this.items[index].title);
       console.log(uni.$u.page());
       uni.$u.route('/pages/Read/Read');
+    },
+    introduction: function introduction() {
+      uni.$u.route('/pages/Resume/Resume');
+    },
+    Page: function Page() {
+      uni.$u.route('/pages/Ranking/Ranking');
     }
   }
 };

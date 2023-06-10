@@ -1,0 +1,95 @@
+
+.image {
+	width: 100%;
+	height: 330rpx;
+}
+.title {
+	display: flex;
+	align-items: center;
+	margin-left: 20rpx;
+	margin-top: -50rpx;
+	background-color: #FFF;
+	box-shadow: -8px 1px 10px 10px #FFF;
+}
+.text {
+	margin-left: 20rpx;
+	margin-top: 20rpx;
+}
+.user {
+	font-size: 36rpx;
+	font-weight: bold;
+	margin-bottom: 10rpx;
+}
+.introduce {
+	font-size: 24rpx;
+	line-height: 50rpx;
+	color: #999999;
+	display: block;
+}
+.photo {
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 20rpx;
+}
+.life {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: -30rpx;
+}
+.time {
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #333333;
+	text-align: center;
+	/*margin-bottom: 20rpx; */
+	margin-top: -10rpx;
+}
+.prominent {
+	font-size: 44rpx;
+	color: #ff9900;
+	/*margin-top: 55rpx; */
+	margin-left: 8rpx;
+	position: absolute;
+	/*z-index: 99; */
+}
+.digit {
+	position: relative;
+	top: 20%;
+	left: 20%;
+	font-size: 80rpx;
+	color: #00bfff;
+}
+.sky {
+	position: relative;
+	left: 20%;
+	/*top: 20%; */
+}
+.deputy {
+	line-height: 0;
+	margin-left: 100rpx;
+	font-size: 24rpx;
+	color: #999999;
+}
+.category {
+	display: flex;
+	justify-content: left;
+	flex-direction: column;
+	padding: 40rpx;
+	line-height: 55rpx;
+	font-family: "苹方 常规";
+}
+.category1 {
+	display: flex;
+	justify-content: left;
+	flex-direction: column;
+	/*background-color: #f2f2f2; */
+	margin-bottom: 20rpx;
+}
+.field {
+	color: #999999;
+	font-size: 30rpx;
+}
+.recording {}
+

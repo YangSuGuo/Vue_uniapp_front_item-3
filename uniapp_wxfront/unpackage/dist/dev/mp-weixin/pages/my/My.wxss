@@ -3,7 +3,8 @@
 .head {
 	height: 520rpx;
 	border-radius: 0 0 60rpx 60rpx;
-	box-shadow: 0px -2px 10px 0px inset #EDEDED, 0px 2px 6px 0px inset #6a737d;
+	box-shadow: inset 0px -2px 10px 0px #EDEDED,
+		inset 0px 2px 6px 0px #6a737d;
 }
 .detail {
 	width: 90%;
@@ -80,8 +81,8 @@
 	width: 90%;
 	height: 180rpx;
 	margin: 40rpx auto;
-	background-color: #7ec69980;
-	border-radius: 20px 20px 20px 20px;
+	background-color: rgba(126, 198, 153, 0.5);
+	border-radius: 20px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;

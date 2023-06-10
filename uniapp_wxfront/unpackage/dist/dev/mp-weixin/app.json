@@ -4,7 +4,9 @@
     "pages/Login/Login",
     "pages/Writing/Writing",
     "pages/Read/Read",
-    "pages/My/My"
+    "pages/My/My",
+    "pages/Resume/Resume",
+    "pages/Ranking/Ranking"
   ],
   "subPackages": [],
   "window": {
@@ -33,16 +35,10 @@
         "text": "写作"
       },
       {
-        "pagePath": "pages/Login/Login",
-        "iconPath": "static/tabBar/用户 (2).png",
-        "selectedIconPath": "static/tabBar/用户 (2) (1).png",
-        "text": "用户"
-      },
-      {
         "pagePath": "pages/My/My",
         "iconPath": "static/tabBar/用户 (2).png",
         "selectedIconPath": "static/tabBar/用户 (2) (1).png",
-        "text": "用户2"
+        "text": "用户"
       }
     ]
   },

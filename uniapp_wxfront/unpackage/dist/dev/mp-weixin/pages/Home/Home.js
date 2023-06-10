@@ -98,10 +98,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    uActionSheet: function () {
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-action-sheet/u-action-sheet */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-action-sheet/u-action-sheet")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-action-sheet/u-action-sheet.vue */ 218))
+    },
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  if (!_vm._isMounted) {
+    _vm.e0 = function ($event) {
+      _vm.show = true
+    }
+    _vm.e1 = function ($event) {
+      _vm.show = false
+    }
+  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -162,11 +193,29 @@ exports.default = void 0;
 //
 //
 //
+//
+//
 var _default = {
   data: function data() {
     return {
       // 后台数据：http://localhost:8080/api/auth/essay/list?parameter=spring
-      items: []
+      items: [],
+      list: [{
+        name: 'ALL'
+      }, {
+        name: 'Vue'
+      }, {
+        name: 'Spring'
+      }, {
+        name: 'Java'
+      }, {
+        name: 'Uniapp'
+      }, {
+        name: 'Node'
+      }, {
+        name: 'Chat'
+      }],
+      show: false
     };
   },
   onLoad: function onLoad() {
@@ -177,7 +226,6 @@ var _default = {
      * @return  json 卡片列表
      */
 
-    // this.$store.commit('cardinfo',"spring")
     var card_parameter = this.$store.state.card.parameter;
     console.log(card_parameter);
     uni.request({
@@ -194,26 +242,7 @@ var _default = {
         console.log(err);
       }
     });
-
-    // uni.request({
-    // 	url: 'http://localhost:8080/api/auth/essay/list',
-    // 	method: 'POST',
-    // 	header: {
-    // 		'content-type': 'application/x-www-form-urlencoded'
-    // 	},
-    // 	data: {
-    // 		parameter: card_parameter
-    // 	},
-    // 	success: res => {
-    // 		// console.log(res)
-    // 		this.items = res.data
-    // 	},
-    // 	fail: err => {
-    // 		console.log(err)
-    // 	}
-    // })
   },
-
   computed: {
     card: function card() {
       return this.items[0];
@@ -224,13 +253,115 @@ var _default = {
       console.log('点击了第' + (index + 1) + '篇文章');
       this.$store.commit('aidinfo', this.items[index].aid);
       this.$store.commit('titleinfo', this.items[index].title);
-      console.log("vuex aid:" + this.$store.state.card.aid);
-      console.log("vuex title:" + this.$store.state.card.title);
       // todo 跳转至阅读Read
-      // let aid = this.items[index].aid;
-      // let title = this.items[index].title;
       console.log(uni.$u.page());
       uni.$u.route('/pages/Read/Read');
+    },
+    CategorizedList: function CategorizedList(card_parameter) {
+      var _this2 = this;
+      // 分类查询文章列表
+      uni.request({
+        url: 'http://localhost:8080/api/auth/essay/list',
+        method: 'POST',
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        data: {
+          parameter: card_parameter
+        },
+        success: function success(res) {
+          console.log(res);
+          _this2.items = res.data;
+        },
+        fail: function fail(err) {
+          console.log(err);
+        }
+      });
+    },
+    selectClick: function selectClick(index) {
+      var _this3 = this;
+      console.log(index);
+      var index_ysg = index.name;
+      var card_parameter = this.$store.state.card.parameter;
+      switch (index_ysg) {
+        case "ALL":
+          if (card_parameter === "ALL") {
+            console.log("无言以对");
+          } else {
+            this.$store.commit('cardinfo', "ALL");
+            uni.request({
+              url: 'http://localhost:8080/api/auth/essay/alllist',
+              method: 'GET',
+              header: {
+                'content-type': 'application/x-www-form-urlencoded'
+              },
+              success: function success(res) {
+                // console.log(res)
+                _this3.items = res.data;
+              },
+              fail: function fail(err) {
+                console.log(err);
+              }
+            });
+          }
+          break;
+        case "Vue":
+          if (card_parameter === "vue") {
+            console.log("无言以对");
+          } else {
+            this.$store.commit('cardinfo', "vue");
+            console.log(this.$store.state.card.parameter);
+            this.CategorizedList(this.$store.state.card.parameter);
+          }
+          break;
+        case "Spring":
+          if (card_parameter === "spring") {
+            console.log("无言以对");
+          } else {
+            this.$store.commit('cardinfo', "spring");
+            console.log(this.$store.state.card.parameter);
+            this.CategorizedList(this.$store.state.card.parameter);
+          }
+          break;
+        case "Java":
+          if (card_parameter === "java") {
+            console.log("无言以对");
+          } else {
+            this.$store.commit('cardinfo', "java");
+            console.log(this.$store.state.card.parameter);
+            this.CategorizedList(this.$store.state.card.parameter);
+          }
+          break;
+        case "Uniapp":
+          if (card_parameter === "uniapp") {
+            console.log("无言以对");
+          } else {
+            this.$store.commit('cardinfo', "uniapp");
+            console.log(this.$store.state.card.parameter);
+            this.CategorizedList(this.$store.state.card.parameter);
+          }
+          break;
+        case "Node":
+          if (card_parameter === "node") {
+            console.log("无言以对");
+          } else {
+            this.$store.commit('cardinfo', "node");
+            console.log(this.$store.state.card.parameter);
+            this.CategorizedList(this.$store.state.card.parameter);
+          }
+          break;
+        default:
+          // chat
+          if (card_parameter === "chat") {
+            console.log("无言以对");
+          } else if (card_parameter !== "chat") {
+            this.$store.commit('cardinfo', "chat");
+            console.log(this.$store.state.card.parameter);
+            this.CategorizedList(this.$store.state.card.parameter);
+          } else {
+            console.log("错误");
+          }
+      }
     }
   }
 };
