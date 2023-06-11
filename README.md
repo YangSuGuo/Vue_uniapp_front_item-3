@@ -25,13 +25,48 @@
 ## 数据库结构
 
 ### 账号信息
-
-id，昵称，头像，邮箱，**用户名**，手机号，微信key，oid，生日，地址，年龄，个人简介，**密码**，浏览量，注册时间，在线状态     /**点赞数，收藏数*/ 
+```
+create table article
+(
+    aid             int auto_increment
+        primary key,
+    writer          varchar(50)  null comment '写作人',
+    Writingtime     mediumtext   null comment '写作时间',
+    label           varchar(50)  null comment '标签',
+    photo           varchar(100) null comment '头像',
+    background      varchar(100) null comment '背景',
+    pageview        int          null comment '浏览量',
+    title           varchar(30)  null comment '文章标题',
+    Articleoverview varchar(100) null comment '文章概述',
+    text            longtext     null comment '文章正文'
+)
+    comment '文章信息'; 
+```
 
 ### 文章信息
-
-aid，写作人，写作时间，tag标签，/* *位置信息*/，头像，背景，浏览量，**文章标题**，**文章概述**，**文章正文**，  /**文章评论，评论时间，评论用户，评论头像，评论点赞*，评论数量/
-
+``` 
+create table user
+(
+    id               int auto_increment comment 'ID'
+        primary key,
+    username         varchar(30)  null comment '用户名',
+    cellphone        varchar(11)  null comment '手机号',
+    email            varchar(30)  null comment '邮箱',
+    openid           varchar(100) null comment '微信openid',
+    u_random         varchar(20)  null comment '用户随机码',
+    password         varchar(255) null comment '密码',
+    nickname         varchar(20)  null comment '昵称',
+    photo            varchar(255) null comment '头像',
+    birthday         varchar(50)  null comment '生日',
+    address          varchar(100) null comment '地址',
+    age              int          null comment '年龄',
+    introduction     varchar(300) null comment '个人简介',
+    pageview         int          null comment '浏览量',
+    Registrationtime varchar(50)  null comment '注册时间',
+    gender           varchar(10)  null comment '性别'
+)
+    comment '用户信息'; 
+```
 ## 功能
 
 自用平台，不支持注册！！
