@@ -101,10 +101,13 @@ var components
 try {
   components = {
     "u-Input": function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u--input/u--input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u--input/u--input")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u--input/u--input.vue */ 200))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u--input/u--input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u--input/u--input")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u--input/u--input.vue */ 235))
     },
     uButton: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 206))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 241))
+    },
+    uModal: function () {
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-modal/u-modal */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-modal/u-modal")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-modal/u-modal.vue */ 249))
     },
   }
 } catch (e) {
@@ -128,6 +131,13 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  if (!_vm._isMounted) {
+    _vm.e0 = function ($event) {
+      this.form.username = null
+      this.form.password = null
+      _vm.show = false
+    }
+  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -198,22 +208,30 @@ exports.default = void 0;
 //
 //
 //
-// todo 连接服务器，验证登录信息。
+//
+//
+//
+//
+//
+// todo 账号密码有误模态框
+// todo 输入框的数据验证判断
 var _default = {
   data: function data() {
     return {
       form: {
         username: '',
         password: ''
-      }
+      },
+      Modalbox: {
+        title: '账号密码错误！',
+        content: '请仔细核对账号密码是否正确(¬‿¬)'
+      },
+      show: false
     };
   },
   methods: {
     Login: function Login() {
-      this.$store.commit('userinfo', this.form.username);
-      this.$store.commit('passinfo', this.form.password);
-      console.log("vuex user:" + this.$store.state.userinfo.username);
-      console.log("vuex pass:" + this.$store.state.userinfo.password);
+      var _this = this;
       uni.request({
         url: 'http://localhost:8080/api/auth/login',
         method: 'POST',
@@ -227,22 +245,44 @@ var _default = {
         success: function success(res) {
           if (res.data.status === 200) {
             // todo 登录验证完跳转个人页面
+            _this.$store.commit('userinfo', _this.form.username);
+            _this.$store.commit('passinfo', _this.form.password);
+            console.log("vuex user:" + _this.$store.state.userinfo.username);
+            console.log("vuex pass:" + _this.$store.state.userinfo.password);
             console.log(res.data);
+            console.log(uni.$u.page());
+            var view = _this.$store.state.userinfo.view;
+            switch (view) {
+              case 2:
+                uni.redirectTo({
+                  url: '/pages/Writingdetails/Writingdetails'
+                });
+                break;
+              case 3:
+                uni.redirectTo({
+                  url: '/pages/My/My'
+                });
+                break;
+              default:
+                uni.redirectTo({
+                  url: '/pages/Home/Home'
+                });
+            }
             // todo ！== 弹出一个提示框
+          } else if (res.data.status === 401) {
+            _this.show = true;
+          } else {
+            console.log("错误！！");
           }
         },
-
         fail: function fail(err) {
           console.log(err);
           // todo 提示错误
         }
       });
     },
-    Register: function Register() {
-      // uni.navigateTo({
-      // 	url: '/pages/login/register'
-      // });
-    }
+    // 注册不做
+    Register: function Register() {}
   }
 };
 exports.default = _default;

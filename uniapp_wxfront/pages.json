@@ -1,12 +1,10 @@
 {
-	"easycom": {
-		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
-	},
 	"pages": [{
 			"path": "pages/Home/Home",
 			"style": {
 				"navigationBarTitleText": "首页",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
 			}
 		},
 		{
@@ -28,12 +26,33 @@
 				"navigationBarTitleText": "阅读",
 				"enablePullDownRefresh": false
 			}
+		}, {
+			"path": "pages/My/My",
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/Resume/Resume",
+			"style": {
+				"navigationBarTitleText": "个人简历",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/Ranking/Ranking",
+			"style": {
+				"navigationBarTitleText": "排行榜",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	    ,{
-            "path" : "pages/My/My",
+            "path" : "pages/Writingdetails/Writingdetails",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "个人资料",
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -42,7 +61,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "",
-		"navigationBarBackgroundColor": "#ffffff",
+		"navigationBarBackgroundColor": "#ddeceb",
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {
 			"background": "#efeff4"
@@ -61,22 +80,16 @@
 				"text": "文章"
 			},
 			{
-				"pagePath": "pages/Writing/Writing",
+				"pagePath": "pages/Writingdetails/Writingdetails",
 				"iconPath": "static/tabBar/学习 (3).png",
 				"selectedIconPath": "static/tabBar/学习 (3) (1).png",
 				"text": "写作"
 			},
 			{
-				"pagePath": "pages/Login/Login",
-				"iconPath": "static/tabBar/用户 (2).png",
-				"selectedIconPath": "static/tabBar/用户 (2) (1).png",
-				"text": "用户"
-			},
-			{
 				"pagePath": "pages/My/My",
 				"iconPath": "static/tabBar/用户 (2).png",
 				"selectedIconPath": "static/tabBar/用户 (2) (1).png",
-				"text": "用户2"
+				"text": "用户"
 			}
 		]
 	}

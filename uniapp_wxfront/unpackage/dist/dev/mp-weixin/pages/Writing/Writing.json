@@ -2,6 +2,6 @@
   "navigationBarTitleText": "写作笔记",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "mp-html": "/components/mp-html/mp-html"
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button"
   }
 }

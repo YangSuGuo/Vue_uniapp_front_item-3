@@ -68,4 +68,8 @@
     <tree path="/uniapp_wxfront/static/tabBar" title="导航栏图标"/>
     <tree path="/uniapp_wxfront/store" title="vuex"/>
     <tree path="/vue_webfront/src/views/home/summary.vue" title="数据"/>
+    <tree path="/uniapp_wxfront/pages/My" title="我的"/>
+    <tree path="/uniapp_wxfront/pages/Resume" title="个人简介"/>
+    <tree path="/uniapp_wxfront/pages/Ranking" title="浏览量TOP"/>
+    <tree path="/uniapp_wxfront/pages/Writingdetails" title="写作详情表单"/>
 </trees>

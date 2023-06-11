@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人简历",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-gap": "/uni_modules/uview-ui/components/u-gap/u-gap"
+  }
+}

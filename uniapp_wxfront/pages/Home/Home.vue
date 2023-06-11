@@ -2,7 +2,7 @@
 	<view class="list">
 		<view class="card">
 			<view class="title-background">
-				<text class="card-text">文章列表</text>
+				<text class="card-text" @click="show = true">文章列表</text>
 			</view>
 			<view class="card-background">
 				<view v-for="(item, index) in items" :key="index" class="card-item" @click="handleClick(index)">
@@ -16,85 +16,181 @@
 				</view>
 			</view>
 		</view>
+		<u-action-sheet :actions="list" :closeOnClickOverlay="true" :show="show" round="20rpx" title="文章分类"
+			@close="show=false" @select="selectClick"></u-action-sheet>
 	</view>
 </template>
 
 <script>
-  export default {
+	export default {
 		data() {
 			return {
 				// 后台数据：http://localhost:8080/api/auth/essay/list?parameter=spring
-				items: []
+				items: [],
+				list: [{
+						name: 'ALL'
+					},
+					{
+						name: 'Vue'
+					},
+					{
+						name: 'Spring'
+					},
+					{
+						name: 'Java'
+					},
+					{
+						name: 'Uniapp'
+					},
+					{
+						name: 'Node'
+					},
+					{
+						name: 'Chat'
+					},
+				],
+				show: false
 			}
 		},
 		onLoad() {
-			/**
-			 * 获取文章列表
-			 * @param parameter 文章分类
-			 * @return  json 卡片列表
-			 */
-
-			// this.$store.commit('cardinfo',"spring")
-			let card_parameter = this.$store.state.card.parameter
-			console.log(card_parameter)
-			uni.request({
-				url: 'http://localhost:8080/api/auth/essay/alllist',
-				method: 'GET',
-				header: {
-					'content-type': 'application/x-www-form-urlencoded'
-				},
-				success: res => {
-					// console.log(res)
-					this.items = res.data
-				},
-				fail: err => {
-					console.log(err)
-				}
-			})
-
-			// uni.request({
-			// 	url: 'http://localhost:8080/api/auth/essay/list',
-			// 	method: 'POST',
-			// 	header: {
-			// 		'content-type': 'application/x-www-form-urlencoded'
-			// 	},
-			// 	data: {
-			// 		parameter: card_parameter
-			// 	},
-			// 	success: res => {
-			// 		// console.log(res)
-			// 		this.items = res.data
-			// 	},
-			// 	fail: err => {
-			// 		console.log(err)
-			// 	}
-			// })
+			this.getalllist()
 		},
 		computed: {
 			card() {
 				return this.items[0]
-			}
+			},
 		},
 		methods: {
+			getalllist() {
+				/**
+				 * 获取文章列表
+				 * @param parameter 文章分类
+				 * @return  json 卡片列表
+				 */
+
+				let card_parameter = this.$store.state.card.parameter
+				console.log(card_parameter)
+				uni.request({
+					url: 'http://localhost:8080/api/auth/essay/alllist',
+					method: 'GET',
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					success: res => {
+						// console.log(res)
+						this.items = res.data
+					},
+					fail: err => {
+						console.log(err)
+					}
+				})
+			},
 			handleClick(index) {
 				console.log('点击了第' + (index + 1) + '篇文章')
 				this.$store.commit('aidinfo', this.items[index].aid)
 				this.$store.commit('titleinfo', this.items[index].title)
-				console.log("vuex aid:" + this.$store.state.card.aid)
-				console.log("vuex title:" + this.$store.state.card.title)
 				// todo 跳转至阅读Read
-				// let aid = this.items[index].aid;
-				// let title = this.items[index].title;
 				console.log(uni.$u.page())
 				uni.$u.route('/pages/Read/Read');
+			},
+			CategorizedList(card_parameter) {
+				// 分类查询文章列表
+				uni.request({
+					url: 'http://localhost:8080/api/auth/essay/list',
+					method: 'POST',
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					data: {
+						parameter: card_parameter
+					},
+					success: res => {
+						console.log(res)
+						this.items = res.data
+					},
+					fail: err => {
+						console.log(err)
+					}
+				})
+			},
+			selectClick(index) {
+				console.log(index);
+				let index_ysg = index.name;
+				let card_parameter = this.$store.state.card.parameter
+				switch (index_ysg) {
+					case "ALL":
+						if (card_parameter === "ALL") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "ALL")
+							this.getalllist()
+						}
+						break;
+					case "Vue":
+						if (card_parameter === "vue") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "vue")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						}
+						break;
+					case "Spring":
+						if (card_parameter === "spring") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "spring")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						}
+						break;
+					case "Java":
+						if (card_parameter === "java") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "java")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						}
+						break;
+					case "Uniapp":
+						if (card_parameter === "uniapp") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "uniapp")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						}
+						break;
+					case "Node":
+						if (card_parameter === "node") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "node")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						}
+						break;
+					default:
+						// chat
+						if (card_parameter === "chat") {
+							console.log("无言以对")
+						} else if (card_parameter !== "chat") {
+							this.$store.commit('cardinfo', "chat")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						} else {
+							console.log("错误")
+						}
+				}
 			}
-      },
-  }
+		},
+	}
 </script>
 
 <style lang="scss">
 	.list {
-		margin-top: 50rpx;
+		margin-top: 60rpx;
 		margin-left: 25rpx;
 		margin-right: 25rpx;
 	}
