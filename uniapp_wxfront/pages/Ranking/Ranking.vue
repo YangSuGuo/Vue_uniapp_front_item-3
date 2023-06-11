@@ -29,7 +29,7 @@
 </template>
 
 <script>
-// todo 更换图片为数字【1~10】排名
+	// todo 更换图片为数字【1~10】排名
 	export default {
 		data() {
 			return {

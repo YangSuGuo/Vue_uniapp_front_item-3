@@ -53,28 +53,7 @@
 			}
 		},
 		onLoad() {
-			/**
-			 * 获取文章列表
-			 * @param parameter 文章分类
-			 * @return  json 卡片列表
-			 */
-
-			let card_parameter = this.$store.state.card.parameter
-			console.log(card_parameter)
-			uni.request({
-				url: 'http://localhost:8080/api/auth/essay/alllist',
-				method: 'GET',
-				header: {
-					'content-type': 'application/x-www-form-urlencoded'
-				},
-				success: res => {
-					// console.log(res)
-					this.items = res.data
-				},
-				fail: err => {
-					console.log(err)
-				}
-			})
+			this.getalllist()
 		},
 		computed: {
 			card() {
@@ -82,6 +61,30 @@
 			},
 		},
 		methods: {
+			getalllist() {
+				/**
+				 * 获取文章列表
+				 * @param parameter 文章分类
+				 * @return  json 卡片列表
+				 */
+
+				let card_parameter = this.$store.state.card.parameter
+				console.log(card_parameter)
+				uni.request({
+					url: 'http://localhost:8080/api/auth/essay/alllist',
+					method: 'GET',
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					success: res => {
+						// console.log(res)
+						this.items = res.data
+					},
+					fail: err => {
+						console.log(err)
+					}
+				})
+			},
 			handleClick(index) {
 				console.log('点击了第' + (index + 1) + '篇文章')
 				this.$store.commit('aidinfo', this.items[index].aid)
@@ -113,28 +116,15 @@
 			selectClick(index) {
 				console.log(index);
 				let index_ysg = index.name;
-        let card_parameter = this.$store.state.card.parameter
+				let card_parameter = this.$store.state.card.parameter
 				switch (index_ysg) {
 					case "ALL":
 						if (card_parameter === "ALL") {
 							console.log("无言以对")
-						}else {
-              this.$store.commit('cardinfo', "ALL")
-              uni.request({
-                url: 'http://localhost:8080/api/auth/essay/alllist',
-                method: 'GET',
-                header: {
-                  'content-type': 'application/x-www-form-urlencoded'
-                },
-                success: res => {
-                  // console.log(res)
-                  this.items = res.data
-                },
-                fail: err => {
-                  console.log(err)
-                }
-              })
-            }
+						} else {
+							this.$store.commit('cardinfo', "ALL")
+							this.getalllist()
+						}
 						break;
 					case "Vue":
 						if (card_parameter === "vue") {
@@ -146,54 +136,53 @@
 						}
 						break;
 					case "Spring":
-            if (card_parameter === "spring") {
-              console.log("无言以对")
-            } else {
-              this.$store.commit('cardinfo', "spring")
-              console.log(this.$store.state.card.parameter)
-              this.CategorizedList(this.$store.state.card.parameter);
-            }
+						if (card_parameter === "spring") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "spring")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						}
 						break;
 					case "Java":
-            if (card_parameter === "java") {
-              console.log("无言以对")
-            } else {
-              this.$store.commit('cardinfo', "java")
-              console.log(this.$store.state.card.parameter)
-              this.CategorizedList(this.$store.state.card.parameter);
-            }
+						if (card_parameter === "java") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "java")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						}
 						break;
 					case "Uniapp":
-            if (card_parameter === "uniapp") {
-              console.log("无言以对")
-            } else {
-              this.$store.commit('cardinfo', "uniapp")
-              console.log(this.$store.state.card.parameter)
-              this.CategorizedList(this.$store.state.card.parameter);
-            }
+						if (card_parameter === "uniapp") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "uniapp")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						}
 						break;
 					case "Node":
-            if (card_parameter === "node") {
-              console.log("无言以对")
-            } else {
-              this.$store.commit('cardinfo', "node")
-              console.log(this.$store.state.card.parameter)
-              this.CategorizedList(this.$store.state.card.parameter);
-            }
+						if (card_parameter === "node") {
+							console.log("无言以对")
+						} else {
+							this.$store.commit('cardinfo', "node")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						}
 						break;
 					default:
 						// chat
-            if (card_parameter === "chat") {
-              console.log("无言以对")
-            } else if (card_parameter !== "chat"){
-              this.$store.commit('cardinfo', "chat")
-              console.log(this.$store.state.card.parameter)
-              this.CategorizedList(this.$store.state.card.parameter);
-            } else {
-              console.log("错误")
-            }
+						if (card_parameter === "chat") {
+							console.log("无言以对")
+						} else if (card_parameter !== "chat") {
+							this.$store.commit('cardinfo', "chat")
+							console.log(this.$store.state.card.parameter)
+							this.CategorizedList(this.$store.state.card.parameter);
+						} else {
+							console.log("错误")
+						}
 				}
-
 			}
 		},
 	}

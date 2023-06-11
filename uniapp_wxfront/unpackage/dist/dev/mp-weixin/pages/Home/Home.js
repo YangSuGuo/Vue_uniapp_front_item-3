@@ -101,7 +101,7 @@ var components
 try {
   components = {
     uActionSheet: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-action-sheet/u-action-sheet */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-action-sheet/u-action-sheet")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-action-sheet/u-action-sheet.vue */ 218))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-action-sheet/u-action-sheet */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-action-sheet/u-action-sheet")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-action-sheet/u-action-sheet.vue */ 225))
     },
   }
 } catch (e) {
@@ -219,29 +219,7 @@ var _default = {
     };
   },
   onLoad: function onLoad() {
-    var _this = this;
-    /**
-     * 获取文章列表
-     * @param parameter 文章分类
-     * @return  json 卡片列表
-     */
-
-    var card_parameter = this.$store.state.card.parameter;
-    console.log(card_parameter);
-    uni.request({
-      url: 'http://localhost:8080/api/auth/essay/alllist',
-      method: 'GET',
-      header: {
-        'content-type': 'application/x-www-form-urlencoded'
-      },
-      success: function success(res) {
-        // console.log(res)
-        _this.items = res.data;
-      },
-      fail: function fail(err) {
-        console.log(err);
-      }
-    });
+    this.getalllist();
   },
   computed: {
     card: function card() {
@@ -249,6 +227,31 @@ var _default = {
     }
   },
   methods: {
+    getalllist: function getalllist() {
+      var _this = this;
+      /**
+       * 获取文章列表
+       * @param parameter 文章分类
+       * @return  json 卡片列表
+       */
+
+      var card_parameter = this.$store.state.card.parameter;
+      console.log(card_parameter);
+      uni.request({
+        url: 'http://localhost:8080/api/auth/essay/alllist',
+        method: 'GET',
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        success: function success(res) {
+          // console.log(res)
+          _this.items = res.data;
+        },
+        fail: function fail(err) {
+          console.log(err);
+        }
+      });
+    },
     handleClick: function handleClick(index) {
       console.log('点击了第' + (index + 1) + '篇文章');
       this.$store.commit('aidinfo', this.items[index].aid);
@@ -279,7 +282,6 @@ var _default = {
       });
     },
     selectClick: function selectClick(index) {
-      var _this3 = this;
       console.log(index);
       var index_ysg = index.name;
       var card_parameter = this.$store.state.card.parameter;
@@ -289,20 +291,7 @@ var _default = {
             console.log("无言以对");
           } else {
             this.$store.commit('cardinfo', "ALL");
-            uni.request({
-              url: 'http://localhost:8080/api/auth/essay/alllist',
-              method: 'GET',
-              header: {
-                'content-type': 'application/x-www-form-urlencoded'
-              },
-              success: function success(res) {
-                // console.log(res)
-                _this3.items = res.data;
-              },
-              fail: function fail(err) {
-                console.log(err);
-              }
-            });
+            this.getalllist();
           }
           break;
         case "Vue":

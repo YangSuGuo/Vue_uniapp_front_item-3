@@ -1,152 +1,193 @@
 
 .My {}
 .head {
-	height: 520rpx;
-	border-radius: 0 0 60rpx 60rpx;
-	box-shadow: inset 0px -2px 10px 0px #EDEDED,
-		inset 0px 2px 6px 0px #6a737d;
+    background-image: url("https://picdl.sunbangyan.cn/2023/06/11/vj3tx8.png");
+    background-size: cover;
+		height: 520rpx;
+		border-radius: 0 0 60rpx 60rpx;
+		box-shadow: inset 0px -2px 10px 0px #EDEDED,
+			inset 0px 2px 6px 0px #6a737d;
 }
 .detail {
-	width: 90%;
-	height: 250rpx;
-	border-bottom-left-radius: 40rpx;
-	border-bottom-right-radius: 40rpx;
-	margin: 0 auto;
-	box-shadow: 0px 2px 4px #888;
+		width: 90%;
+		height: 250rpx;
+		border-bottom-left-radius: 40rpx;
+		border-bottom-right-radius: 40rpx;
+		margin: 0 auto;
+		box-shadow: 0px 2px 4px #888;
+    background-image: url("https://picdl.sunbangyan.cn/2023/06/11/vnvq5u.png");
+    background-size: cover;
 }
-.detail {}
 .user {
-	display: flex;
-	flex-direction: end;
-	align-items: end;
-	padding: 20rpx;
-	position: relative;
+		display: flex;
+		flex-direction: end;
+		align-items: end;
+		padding: 20rpx;
+		position: relative;
 }
 .photo {
-	width: 180rpx;
-	height: 180rpx;
-	border-radius: 20px;
+		width: 180rpx;
+		height: 180rpx;
+		border-radius: 20px;
 }
 .userinfo {
-	display: flex;
-	flex-direction: column;
-	margin-top: 20rpx;
-	margin-left: 35rpx;
-	letter-spacing: 2rpx;
+		display: flex;
+		flex-direction: column;
+		margin-top: 20rpx;
+		margin-left: 35rpx;
+		letter-spacing: 2rpx;
 }
 .name {
-	font-family: "苹方 常规";
-	font-size: 40rpx;
-	color: #000000;
+		font-family: "苹方 常规";
+		font-size: 40rpx;
+		color: #000000;
 }
 .biography {
-	font-family: "苹方 常规";
-	margin-top: 10rpx;
-	color: #7a7a7a;
-	font-weight: 500;
-	font-size: 28rpx;
+		font-family: "苹方 常规";
+		margin-top: 10rpx;
+		color: #7a7a7a;
+		font-weight: 500;
+		font-size: 28rpx;
 }
 .introduction {
-	position: absolute;
-	top: 0rpx;
-	right: 10rpx;
-	display: flex;
-	zoom: 75%;
-	font-family: "苹方 常规";
+		position: absolute;
+		top: 0rpx;
+		right: 10rpx;
+		display: flex;
+		zoom: 75%;
+		font-family: "苹方 常规";
 }
 .flag {
-	width: 80rpx;
-	height: 40px;
-	background-color: #009961;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+		width: 80rpx;
+		height: 40px;
+		background-color: #009961;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
 }
 .text {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 }
 .text::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50rpx;
-	border-width: 16px 20px;
-	border-color: #009961;
-	border-style: solid;
-	border-bottom: 16px solid transparent;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50rpx;
+		border-width: 16px 20px;
+		border-color: #009961;
+		border-style: solid;
+		border-bottom: 16px solid transparent;
 }
 .main {
-	width: 90%;
-	height: 180rpx;
-	margin: 40rpx auto;
-	background-color: rgba(126, 198, 153, 0.5);
-	border-radius: 20px;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+		width: 90%;
+		height: 180rpx;
+		margin: 40rpx auto;
+		background-color: rgba(126, 198, 153, 0.5);
+		border-radius: 20px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 }
+.TotalViews {
+		width: 80rpx;
+		height: 80rpx;
+		border-radius: 20rpx;
+		background-color: rgba(242, 206, 43, 0.55);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+.TotalViews-text {
+		color: #e2777a;
+		font-family: "苹方 常规";
+		font-size: 30rpx;
+		font-weight: bold;
+}
+.icons {
+		position: relative;
+		left: 20%;
+}
+.TotalViews-title {
+		font-size: 30rpx;
+		font-family: "苹方 常规";
+		color: #2d2d2d;
+}
+.function {}
 .myarticle {
-	margin-top: 40rpx;
-	font-family: "苹方 常规";
-	font-size: 40rpx;
-	font-weight: 500;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+		margin-top: 40rpx;
+		font-family: "苹方 常规";
+		font-size: 40rpx;
+		font-weight: 500;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 }
 .Myarticle {}
 .bottom {
-	height: 100%;
-	width: 98%;
-	margin: 20rpx auto;
-	border-radius: 40rpx;
+		height: 100%;
+		width: 98%;
+		margin: 20rpx auto;
+		border-radius: 40rpx;
 }
 .list {
-	margin-top: 40rpx;
-	margin-left: 25rpx;
-	margin-right: 25rpx;
+		margin-top: 40rpx;
+		margin-left: 25rpx;
+		margin-right: 25rpx;
 }
 .card-background {
-	margin-top: 30rpx;
+		margin-top: 30rpx;
 }
 .card-item {
-	display: flex;
-	padding: 20rpx;
-	background-color: #ffffff;
-	margin-bottom: 30rpx;
-	border-radius: 13rpx;
-	box-shadow: 0px 2rpx 8rpx rgba(0, 0, 0, 0.15);
-	position: relative;
-	overflow: hidden;
+		display: flex;
+		padding: 20rpx;
+		background-color: #ffffff;
+		margin-bottom: 30rpx;
+		border-radius: 13rpx;
+		box-shadow: 0px 2rpx 8rpx rgba(0, 0, 0, 0.15);
+		position: relative;
+		overflow: hidden;
+}
+.card-item2 {
+		display: flex;
 }
 .card-image {
-	width: 141rpx;
-	height: 141rpx;
-	border-radius: 10rpx;
-	margin-right: 30rpx;
+		width: 141rpx;
+		height: 141rpx;
+		border-radius: 10rpx;
+		margin-right: 30rpx;
 }
 .card-content {
-	margin-top: 10rpx;
+		margin-top: 10rpx;
+}
+.card-title01 {
+		width: 200px;
+		/* 规定标题字符数量，溢出隐藏 */
+		max-width: 200px;
+		overflow: hidden;
+		/* 超出部分显示 。。。 */
+		text-overflow: ellipsis;
+		/* 不进行换行 */
+		white-space: nowrap;
 }
 .card-title {
-	font-size: 30rpx;
-	color: #000000;
-	font-family: "苹方 常规";
-	margin-bottom: 10rpx;
+		font-size: 30rpx;
+		color: #000000;
+		font-family: "苹方 常规";
+		margin-bottom: 10rpx;
 }
 .card-label {
-	color: #7a7a7a;
-	font-size: 26rpx;
-	font-weight: 500;
-	font-family: "苹方 常规";
-	text-align: center;
+		color: #7a7a7a;
+		font-size: 26rpx;
+		font-weight: 500;
+		font-family: "苹方 常规";
+		text-align: center;
 }
 .delete {
-	position: absolute;
-	top: -5rpx;
-	right: -5rpx;
-	zoom: 75%;
+		position: absolute;
+		top: -5rpx;
+		right: -5rpx;
+		zoom: 75%;
 }
 

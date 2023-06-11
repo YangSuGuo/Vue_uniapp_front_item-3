@@ -5,21 +5,12 @@
 		</view>
 		<view class="form">
 			<view class="input">
-				<u--input
-            v-model="form.username"
-            clearable
-            placeholder="请输入用户名"
-            prefixIcon="account"
-            prefixIconStyle="font-size: 22px;color: #909399"></u--input>
+				<u--input v-model="form.username" clearable placeholder="请输入用户名" prefixIcon="account"
+					prefixIconStyle="font-size: 22px;color: #909399"></u--input>
 			</view>
 			<view class="input">
-				<u--input
-            v-model="form.password"
-            clearable
-            placeholder="请输入密码"
-            prefixIcon="lock"
-            prefixIconStyle="font-size: 22px;color: #909399"
-            type="password"></u--input>
+				<u--input v-model="form.password" clearable placeholder="请输入密码" prefixIcon="lock"
+					prefixIconStyle="font-size: 22px;color: #909399" type="password"></u--input>
 			</view>
 			<u-button style="margin-top: 40rpx;width: 600rpx;" type="primary" @click="Login">登录</u-button>
 			<view class="register">
@@ -35,15 +26,11 @@
 				</view>
 			</view>
 		</view>
-    <u-modal
-        :content='Modalbox.content'
-        :show="show"
-        :title="Modalbox.title"
-        @confirm="
+		<u-modal :content='Modalbox.content' :show="show" :title="Modalbox.title" width="550rpx" @confirm="
         this.form.username = null;
         this.form.password = null;
         show = false;">
-    </u-modal>
+		</u-modal>
 	</view>
 </template>
 
@@ -57,12 +44,11 @@
 					username: '',
 					password: ''
 				},
-        Modalbox: {
-          title:'账号密码错误！',
-          content:'请仔细核对账号密码是否正确(¬‿¬)'
-        },
-        show:false,
-
+				Modalbox: {
+					title: '账号密码错误！',
+					content: '请仔细核对账号密码是否正确(¬‿¬)'
+				},
+				show: false,
 			};
 		},
 		methods: {
@@ -86,15 +72,29 @@
 							console.log("vuex pass:" + this.$store.state.userinfo.password)
 							console.log(res.data)
 							console.log(uni.$u.page())
-							uni.redirectTo({
-								url: '/pages/My/My'
-							}) 
+              let view = this.$store.state.userinfo.view
+              switch (view) {
+                case 2:
+                  uni.redirectTo({
+                    url: '/pages/Writingdetails/Writingdetails'
+                  })
+                  break;
+                case 3:
+                  uni.redirectTo({
+                    url: '/pages/My/My'
+                  })
+                  break;
+                default:
+                  uni.redirectTo({
+                    url: '/pages/Home/Home'
+                  })
+              }
 							// todo ！== 弹出一个提示框
 						} else if (res.data.status === 401) {
-              this.show = true;
+							this.show = true;
 						} else {
-              console.log("错误！！")
-            }
+							console.log("错误！！")
+						}
 					},
 					fail: err => {
 						console.log(err)
@@ -103,9 +103,7 @@
 				})
 			},
 			// 注册不做
-			Register() {
-
-			}
+			Register() {}
 		}
 	};
 </script>

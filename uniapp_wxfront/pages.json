@@ -48,7 +48,16 @@
 			}
 
 		}
-	],
+	    ,{
+            "path" : "pages/Writingdetails/Writingdetails",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "",
@@ -71,7 +80,7 @@
 				"text": "文章"
 			},
 			{
-				"pagePath": "pages/Writing/Writing",
+				"pagePath": "pages/Writingdetails/Writingdetails",
 				"iconPath": "static/tabBar/学习 (3).png",
 				"selectedIconPath": "static/tabBar/学习 (3) (1).png",
 				"text": "写作"

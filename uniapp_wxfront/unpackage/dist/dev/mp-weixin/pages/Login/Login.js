@@ -101,13 +101,13 @@ var components
 try {
   components = {
     "u-Input": function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u--input/u--input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u--input/u--input")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u--input/u--input.vue */ 228))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u--input/u--input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u--input/u--input")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u--input/u--input.vue */ 235))
     },
     uButton: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 234))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 241))
     },
     uModal: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-modal/u-modal */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-modal/u-modal")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-modal/u-modal.vue */ 242))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-modal/u-modal */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-modal/u-modal")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-modal/u-modal.vue */ 249))
     },
   }
 } catch (e) {
@@ -213,19 +213,6 @@ exports.default = void 0;
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 // todo 账号密码有误模态框
 // todo 输入框的数据验证判断
 var _default = {
@@ -264,9 +251,23 @@ var _default = {
             console.log("vuex pass:" + _this.$store.state.userinfo.password);
             console.log(res.data);
             console.log(uni.$u.page());
-            uni.redirectTo({
-              url: '/pages/My/My'
-            });
+            var view = _this.$store.state.userinfo.view;
+            switch (view) {
+              case 2:
+                uni.redirectTo({
+                  url: '/pages/Writingdetails/Writingdetails'
+                });
+                break;
+              case 3:
+                uni.redirectTo({
+                  url: '/pages/My/My'
+                });
+                break;
+              default:
+                uni.redirectTo({
+                  url: '/pages/Home/Home'
+                });
+            }
             // todo ！== 弹出一个提示框
           } else if (res.data.status === 401) {
             _this.show = true;

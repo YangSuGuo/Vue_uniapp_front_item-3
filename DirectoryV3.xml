@@ -71,4 +71,5 @@
     <tree path="/uniapp_wxfront/pages/My" title="我的"/>
     <tree path="/uniapp_wxfront/pages/Resume" title="个人简介"/>
     <tree path="/uniapp_wxfront/pages/Ranking" title="浏览量TOP"/>
+    <tree path="/uniapp_wxfront/pages/Writingdetails" title="写作详情表单"/>
 </trees>
