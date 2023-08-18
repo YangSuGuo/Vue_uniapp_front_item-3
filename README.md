@@ -20,7 +20,7 @@
 * web 可以分类浏览，uniapp只能简单浏览
 * web 不支持写作，uniapp支持
 * web 不支持用户详情，uniapp支持
-* web 公开，uniapp不公开【少数人公开】
+* web 公开，uniapp不公开
 
 ## 数据库结构
 
